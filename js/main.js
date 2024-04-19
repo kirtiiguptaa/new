@@ -1,3 +1,21 @@
+// Loading page
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+        document.getElementById('video').style.display = 'block';
+    }, 3000); 
+  });
+  
+  // Loading
+  window.addEventListener("load", function() {
+    setTimeout(function() {
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+    }, 4000); 
+    
+  });
+
 (function ($) {
     "use stict";
     var count = 1;
