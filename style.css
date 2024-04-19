@@ -304,7 +304,7 @@ textarea {
 
 /* About */
 .about-us {
-    background: url(../assets/about.webp);
+    background: url(assets/about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -484,7 +484,7 @@ textarea {
 }
 
 .career-bg {
-    background: url(../assets/careers1.jpg) no-repeat center;
+    background: url(assets/careers1.jpg) no-repeat center;
     background-size: cover;
     animation: zoomInOut 10s infinite alternate;
     width: 100%;
