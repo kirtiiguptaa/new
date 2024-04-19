@@ -279,44 +279,15 @@ a.button:hover {
 
 /* About */
 .about-us {
-    width: 100%;
-    height: 83vh;
-    background-color: #FDF8FA;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding: 50px;
 }
 
-.about-us .left {
-    padding: 0;
-    max-width: 800px;
-}
-
-.left h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    margin-bottom: 15px;
-}
-
-.left h3:hover {
-    color: #f9b000;
-}
-
-.left p {
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.about-us .right {
-    display: flex;
-    justify-content: center;
-    right: 0;
-}
-
-.about-us .right img {
-    max-width: 100%;
-    height: auto;
+.about-us video {
+    width: 100%;
 }
 
 .approach {
@@ -451,6 +422,28 @@ a.button:hover {
     border-radius: 50%;
 }
 
+
+.contact-btn {
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 32px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid #000;
+    text-transform: capitalize;
+    z-index: 9;
+    outline: none;
+    transition: color .15s cubic-bezier(0.22,1,0.36,1);
+}
+
+.contact-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
 
 
 /* ===================================
@@ -718,9 +711,9 @@ a.button:hover {
     overflow: visible;
 }
 
-.menu-right-part.open a {
+/* .menu-right-part.open a {
     color: black;
-}
+} */
 
 #header-main-menu .search-field {
     font-family: 'Poppins', sans-serif;
@@ -2091,6 +2084,7 @@ li.coco-gallery-item.b-w img {
 }
 
 
+
 @media (max-width: 400px) {
     .header-logo {
         top: 8px;
@@ -2108,17 +2102,29 @@ li.coco-gallery-item.b-w img {
     .pride {
         display: none;
     }
+    .main-menu.sm-clean {
+        max-width: 215px;
+    }
     .home {
-        top: 52px;
-        position: relative;    
+        position: relative;
         height: 100vh;
+        top: -50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .home h1 {
-        font-size: 56px;
+        font-size: 55px;
     }
     .about-us {
-        padding: 50px 15px;
+        width: 100vw;
+        height: 100%;
         display: block;
+        padding: 50px 0;
+    }
+    
+    .about-us video {
+        width: 100%;
     }
     .about-us .left {
         width: 330px;
@@ -2142,6 +2148,11 @@ li.coco-gallery-item.b-w img {
     .work .content {
         max-width: 320px;
     }
+    .horizontal-slider .no-horizontal-slider {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
     .horizontal-slider .no-horizontal-slider:last-child {
         margin-left: 0;
         margin-right: 0;
@@ -2149,5 +2160,9 @@ li.coco-gallery-item.b-w img {
     }
     .horizontal-slider .no-horizontal-slider .swiper-slide:last-child {
         margin-bottom: 0;
+    }
+    .contact-btn {
+        font-size: 16px;
+        padding: 6px 12px;
     }
 }
