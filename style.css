@@ -304,7 +304,7 @@ textarea {
 
 /* About */
 .about-us {
-    background: url(assets/about.webp);
+    background: url(../assets/about.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
