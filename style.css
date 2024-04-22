@@ -662,7 +662,7 @@ label {
 
 .services-main .services {
     position: relative;
-    top: 50px;
+    top: 20px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -675,35 +675,42 @@ label {
 }
 
 .container .services-heading {
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 800;
     text-transform: uppercase;
     color: #292726;
     text-align: start;
-    margin-left: 0;
+    margin-left: 10px;
+    margin-top: 150px;
 }
 
 .service-main-list {
     text-align: center;
-    margin-top: 40px;
-    position: relative;
-    animation: zoomInOut 2s infinite alternate;
+    margin-top: 20px;
+    position: absolute;
+    right: 70px;
 }
 
 .service-main-list li {
     list-style: none;
-    margin-bottom: -8px;
+    margin-bottom: -5px;
+}
+
+.service-main-list li:last-child {
+    margin-top: 10px;
 }
 
 .service-main-list li a {
-    color: #000;
-    font-size: 95px;
+    font-size: 108px;
     font-weight: 900;
     text-transform: capitalize;
+    line-height: 0.4;
+    -webkit-text-stroke: 2px solid #000;
+    text-shadow: 2px 2px 0 #000;
 }
 
 .service-main-list li:nth-child(1) a {
-    font-size: 120px;
+    font-size: 130px;
     color: #15616d;
 }
 
@@ -713,18 +720,7 @@ label {
 
 .service-main-list li:nth-child(3) a {
     color: #c5587b;
-}
-
-@keyframes zoomInOut {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
+    line-height: 0.5;
 }
 
 .service-content {
@@ -1013,7 +1009,7 @@ label {
     font-weight: 400;
 }
 
-.has-submenu {
+.dropdownbtn {
     position: relative;
     display: block;
 }
@@ -1025,9 +1021,10 @@ label {
     top: -150px;
     width: 850px;
     height: 100%;
+    transition: all 5s ease-in-out;
 }
 
-.has-submenu:hover .service-dropdown {
+.dropdownbtn:hover .service-dropdown {
     display: block;
 }
 
