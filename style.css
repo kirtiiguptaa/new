@@ -1017,9 +1017,9 @@ label {
 .service-dropdown {
     display: none;
     position: absolute;
-    left: 330px;
+    left: 270px;
     top: -150px;
-    width: 850px;
+    width: 950px;
     height: 100%;
     transition: all 5s ease-in-out;
 }
@@ -1043,7 +1043,7 @@ label {
 }
 
 .service-dropdown .service-list ul:first-child {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .service-list .heading {
@@ -1053,27 +1053,18 @@ label {
 }
 
 .service-list .heading:hover {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
 }
 
 .first li a.heading-list,
 .second li a.heading-list,
 .third li a.heading-list {
-    font-size: 18px;
+    font-size: 16.5px;
     color: #fff;
     font-weight: 500;
     text-transform: capitalize;
 }
-
-.first li a.heading-list:hover,
-.second li a.heading-list:hover,
-.third li a.heading-list:hover {
-    color: #fff;
-    font-weight: 500;
-}
-
-
 
 .sm-clean .sub-menu li a:hover, 
 .sm-clean .sub-menu li a.current, 
@@ -2674,7 +2665,7 @@ li.coco-gallery-item.b-w img {
     .service-main-list {
         padding: 0;
         margin-left: 0;
-        right: 15px;
+        right: 10px;
         margin-top: 40px;
     }
     .service-main-list li {
