@@ -279,10 +279,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 
 /* Home */
 .home {
@@ -301,11 +297,24 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 80vw;
-    height: 80vh;
+    width: 70vw;
+    height: 70vh;
     display: flex;
     align-items: center;
-    margin: 0 100px;
+    margin: 0 160px;
+    animation: zoomInOut 10s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.8); 
+    }
+    50% {
+        transform: scale(0.4); 
+    }
+    100% {
+        transform: scale(0.8); 
+    }
 }
 
 .approach {
@@ -334,6 +343,7 @@ textarea {
     justify-content: center;
     z-index: 9999;
     position: relative;
+    overflow: hidden;
 }
 
 .flag-container {
@@ -1072,7 +1082,7 @@ label {
     z-index: 998;
     top: 0;
     left: calc(-100% - 100px);
-    transition: .4s left cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: 1s left cubic-bezier(0.22, 0.61, 0.36, 1);
     padding-left: 150px;    
     padding-top: 0;
 }
@@ -2222,3 +2232,4 @@ p.menu-text-title {
         height: 55px;
     }
 }
+
