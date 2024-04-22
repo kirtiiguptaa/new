@@ -334,7 +334,6 @@ textarea {
     justify-content: center;
     z-index: 9999;
     position: relative;
-    left: 100px;
 }
 
 .flag-container {
