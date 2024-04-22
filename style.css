@@ -1535,6 +1535,15 @@ p.menu-text-title {
     9. Responsive CSS
 ====================================== */
 
+@media screen and (max-width: 1370px) {
+    .container .services-heading {
+        margin-top: 11.4rem;
+    }
+    .service-main-list {
+        margin-top: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 1360px) {
 
     .single-post h1.entry-title {
