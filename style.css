@@ -296,11 +296,10 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 70vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
-    margin: 0 160px;
     animation: zoomInOut 10s infinite alternate;
 }
 
@@ -316,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* APPROACH */
 .approach {
     font-family: "Montserrat", sans-serif;
     background-color: #000;
@@ -333,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+/* WORK */
 .work {
     width: calc(100vw - 100px);
     height: 100vh;
@@ -460,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
-
+/* CAREER */
 .career {
     position: relative;
     width: 100%;
@@ -556,6 +557,7 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
 }
 
+/* CONTACT */
 .contact-container {
     height: 100vh;
     display: flex;
@@ -643,7 +645,7 @@ label {
     border: 2px solid #000;
 }
 
-
+/* SERVICES */
 .container .services-main {
     position: relative;
     width: 100%;
@@ -851,7 +853,85 @@ label {
     border-bottom-left-radius: 12px;
 }
 
+/* SEO */
+.services-main .service {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
 
+.service .service-heading {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.service .service-name {
+    font-size: 100px;
+    font-weight: 900;
+    color: #89043d;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+.service-description .description-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.service-description .description-content {
+    font-weight: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.seo-expertise,
+.seo-choose {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.seo-expertise .expertise-title,
+.seo-choose .choose-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #292726;
+    width: 145px;
+}
+
+.seo-choose .choose-title {
+    width: 177px;
+}
+
+.seo-expertise li,
+.seo-choose li {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.seo-expertise li a,
+.seo-choose li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #15616d;
+}
+
+.seo-expertise li a span,
+.seo-choose li a span {
+    font-weight: 500;
+    color: #000;
+}
 
 /* ===================================
    1 .1 Tipper CSS
