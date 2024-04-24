@@ -2481,5 +2481,16 @@ p.menu-text-title {
         width: 100%;
         margin-left: 0;
     }
+    .contact-details.service {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .copyright.service {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .digital-col:last-child {
+        margin-bottom: 150px;
+    }
 }
 
