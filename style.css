@@ -2252,6 +2252,7 @@ p.menu-text-title {
     }
     .work {
         width: 100%;
+        height: 100%;
         padding-left: 0;
     }
     .work .content {
@@ -2259,16 +2260,8 @@ p.menu-text-title {
         max-width: 320px;
     }
     .work .content p {
-        font-size: 20px;
-    }
-    .copyright {
-        position: absolute;
-        bottom: -40px;
-        width: 100%;
-    }
-    .copyright p {
-        font-size: 11px;
-        color: #666;
+        font-size: 17px;
+        margin-bottom: 130px;
     }
     .horizontal-slider .no-horizontal-slider {
         margin-left: 0;
@@ -2293,32 +2286,40 @@ p.menu-text-title {
     }
     .career {
         padding-left: 0;
+        height: 100%;
+        overflow-y: scroll;
     }
     .career-info {
         display: flex;
         align-items: center;
         flex-direction: column;
         left: 0px;
-        top: 58px;
+        top: 34px;
+        position: absolute;
+        height: 100%;
     }
     .career .career-title {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 50px;
     }
     .career .career-content {
         margin-top: -10px;
+        margin-bottom: 15px;
     }
     .career .career-content .content-title {
-        margin: 10px 20px;
-        width: 158px;
+        margin: 7px 10px;
+        width: 122px;
+        font-size: 17px;
+        margin-top: 0;
     }
     .career .career-content p {
-        width: 330px;
+        width: 328px;
         font-size: 12px;
-        margin: 0 15px;
+        margin: 0 10px;
     }
-    .career .button {
-        margin-top: 20px;
+    .career .button a {
+        font-size: 14px;
+        padding: 0 8px;
     }
     .container section {
         margin-top: 70px;
@@ -2428,6 +2429,57 @@ p.menu-text-title {
     .creative-icon, .dev-icon, .digital-icon {
         width: 40px;
         height: 55px;
+    }
+    .container .services-main.seo {
+        display: block;
+        top: 80px;
+    }
+    .service.seo {
+        top: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .service-description {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .seo-expertise .expertise-title, 
+    .seo-choose .choose-title {
+        margin-left: 10px;
+    }
+    .seo-expertise li, 
+    .seo-choose li {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .copyright {
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyright p {
+        font-size: 11px;
+        color: #292726;
+    }
+    .contact-details.responsive {
+        bottom: -50px;
+    }
+    .copyright.responsive {
+        bottom: -100px;
+    }
+    .contact-details.subservice {
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyright.subservice {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
