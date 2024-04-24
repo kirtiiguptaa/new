@@ -387,6 +387,16 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #666;
+}
+
 .swiper-slide {
     overflow: hidden;
 }
