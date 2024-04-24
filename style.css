@@ -2468,10 +2468,10 @@ p.menu-text-title {
         color: #292726;
     }
     .contact-details.responsive {
-        bottom: -50px;
+        bottom: 0;
     }
     .copyright.responsive {
-        bottom: -100px;
+        bottom: -45px;
     }
     .contact-details.subservice {
         width: 100%;
