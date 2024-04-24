@@ -389,14 +389,85 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.contact-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+    bottom: 24px;
+    position: absolute;
+    gap: 80px;
+    padding-top: 3px;
+}
+
+.contact-details.subservice {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: 0;
+    position: relative;
+}
+
+.contact-details.service {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: 30px;
+}
+
+.contact-phone, 
+.contact-mail,
+.contact-location {
+    color: #292726;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-phone i, 
+.contact-mail i,
+.contact-location i {
+    margin-right: 8px;
+    color: #292726;
+    font-size: 14px;
+}
+
+.contact-phone:hover, 
+.contact-mail:hover,
+.contact-location:hover {
+    color: #292726;
+    text-decoration: underline;
+}
+
 .copyright {
     position: absolute;
-    bottom: 0;
+    bottom: -18px;
+    background-color: #e7e7e7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .copyright p {
     font-size: 14px;
-    color: #666;
+    color: #292726;
+    font-weight: 500;
+}
+
+.copyright.service {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: -20px;
+}
+
+.copyright.subservice {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: 0px;
+    position: relative;
+}
+
+.copyright.contact {
+    line-height: 0;
+    bottom: 0;
 }
 
 .swiper-slide {
@@ -515,7 +586,6 @@ h1, h2, h3, h4, h5, h6 {
 .career .career-title {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
-    margin-top: 10px;
     color: #fff;
 }
 
@@ -549,7 +619,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .career .button {
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -572,7 +641,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CONTACT */
 .contact-container {
-    height: 100vh;
+    position: relative;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
@@ -610,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     border: 1px solid #ccc;
     outline: none;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: #666;
     font-weight: 500;
     border-radius: 50px;
@@ -618,7 +688,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-container .textarea {
-    height: 140px;
+    height: 100px;
     padding-top: 15px;
     border-radius: 20px;
 }
@@ -649,7 +719,7 @@ label {
     border-radius: 50px;
     background-color: #000;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .contact-container button:hover {
@@ -753,6 +823,7 @@ label {
 .container .creative-services,
 .container .dev-services,
 .container .digital-services {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -763,6 +834,7 @@ label {
 
 .container .digital-services {
     margin-bottom: 0;
+    padding-bottom: 100px;
 }
 
 .creative-services .creative-heading,
@@ -911,6 +983,10 @@ label {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+}
+
+.seo-choose li:last-child{
+    padding-bottom: 30px;
 }
 
 .seo-expertise .expertise-title,
@@ -2184,6 +2260,15 @@ p.menu-text-title {
     }
     .work .content p {
         font-size: 20px;
+    }
+    .copyright {
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+    }
+    .copyright p {
+        font-size: 11px;
+        color: #666;
     }
     .horizontal-slider .no-horizontal-slider {
         margin-left: 0;
