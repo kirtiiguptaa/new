@@ -2294,7 +2294,7 @@ p.menu-text-title {
         align-items: center;
         flex-direction: column;
         left: 0px;
-        top: 34px;
+        top: 50px;
         position: absolute;
         height: 100%;
     }
@@ -2307,7 +2307,7 @@ p.menu-text-title {
         margin-bottom: 15px;
     }
     .career .career-content .content-title {
-        margin: 7px 10px;
+        margin: 10px;
         width: 122px;
         font-size: 17px;
         margin-top: 0;
@@ -2468,10 +2468,10 @@ p.menu-text-title {
         color: #292726;
     }
     .contact-details.responsive {
-        bottom: 0;
+        bottom: 40px;
     }
     .copyright.responsive {
-        bottom: -45px;
+        bottom: -10px;
     }
     .contact-details.subservice {
         width: 100%;
