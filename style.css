@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: calc(100vw - 100px);
     background: url(assets/approach.jpeg);
-    background-position: center;
+    background-position: contain;
     background-size: cover;
 }
 
