@@ -2287,7 +2287,6 @@ p.menu-text-title {
     .career {
         padding-left: 0;
         height: 100%;
-        overflow-y: scroll;
     }
     .career-info {
         display: flex;
@@ -2468,10 +2467,10 @@ p.menu-text-title {
         color: #292726;
     }
     .contact-details.responsive {
-        bottom: 65px;
+        bottom: 80px;
     }
     .copyright.responsive {
-        bottom: 15px;
+        bottom: 30px;
     }
     .contact-details.subservice {
         width: 100%;
