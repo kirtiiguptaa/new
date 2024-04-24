@@ -318,13 +318,14 @@ h1, h2, h3, h4, h5, h6 {
 /* APPROACH */
 .approach {
     font-family: "Montserrat", sans-serif;
-    background-color: #000;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100vw - 100px);
-    left: 100px;
+    background: url(assets/approach.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 
 .approach h3 {
@@ -336,6 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 /* WORK */
 .work {
     width: calc(100vw - 100px);
+    left: 100px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -789,9 +791,9 @@ label {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.creative-list a h4,
-.dev-list a h4,
-.digital-list a h4 {
+.creative-list h4,
+.dev-list h4,
+.digital-list h4 {
     font-size: 20px;
     color: #f9b000;
 }
@@ -1618,6 +1620,28 @@ p.menu-text-title {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+/* #page-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  } */
+  
 
 /* ===================================
     9. Responsive CSS
