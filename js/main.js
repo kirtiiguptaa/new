@@ -33,6 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
           slidesPerGroup: 1,
           spaceBetween: 24,
         },
+        949: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+        649: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+        400: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
     },
   });
 
@@ -50,6 +65,21 @@ document.addEventListener("DOMContentLoaded", function() {
     breakpoints: {
         1349: {
             slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+        949: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+        649: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+        400: {
+            slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 24,
         },
