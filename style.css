@@ -337,6 +337,108 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(100vh - 100px);
 }
 
+/* CONTACT & COPYRIGHT */
+contact-copyright {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 100px);
+    background-color: #000;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.name-logo .name {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 34px;
+    margin-right: 40px;
+    height: 100%;
+}
+
+.name-logo .logo {
+    width: 100px;
+}
+
+.name-logo .logo img{
+    width: 100%;
+}
+
+.contact-details {
+    width: calc(100vw - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 60px;
+    position: absolute;
+    padding-top: 3px;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-details.subservice {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: 0;
+    position: relative;
+}
+
+.contact-details.service {
+    width: calc(100vw - 100px);
+    margin-left: -30px;
+    bottom: 30px;
+}
+
+.contact-phone, 
+.contact-mail,
+.contact-location {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-phone i, 
+.contact-mail i,
+.contact-location i {
+    margin-right: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-phone:hover, 
+.contact-mail:hover,
+.contact-location:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copyright {
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
 /* WORK */
 .work {
     width: calc(100vw - 100px);
@@ -390,18 +492,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.contact-details {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e7e7e7;
-    bottom: 24px;
-    position: absolute;
-    gap: 80px;
-    padding-top: 3px;
-}
-
 .contact-details.subservice {
     width: calc(100vw - 100px);
     margin-left: -30px;
@@ -413,44 +503,6 @@ h1, h2, h3, h4, h5, h6 {
     width: calc(100vw - 100px);
     margin-left: -30px;
     bottom: 30px;
-}
-
-.contact-phone, 
-.contact-mail,
-.contact-location {
-    color: #292726;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.contact-phone i, 
-.contact-mail i,
-.contact-location i {
-    margin-right: 8px;
-    color: #292726;
-    font-size: 14px;
-}
-
-.contact-phone:hover, 
-.contact-mail:hover,
-.contact-location:hover {
-    color: #292726;
-    text-decoration: underline;
-}
-
-.copyright {
-    position: absolute;
-    bottom: -18px;
-    background-color: #e7e7e7;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.copyright p {
-    font-size: 14px;
-    color: #292726;
-    font-weight: 500;
 }
 
 .copyright.service {
@@ -2251,6 +2303,39 @@ p.menu-text-title {
     .approach h3 {
         font-size: 45px;
     }
+    .approach-img {
+        height: auto;
+    }
+    .contact-copyright {
+        width: 100%;
+        height: calc(100vh - 80px);
+    }
+    .name-logo {
+        flex-direction: column;
+    }
+    .name-logo .name {
+        margin-bottom: 30px;
+        font-size: 60px;
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 0px;
+        bottom: 130px;
+    }
+    .copyright {
+        width: 100%;
+        margin-left: 0;
+        bottom: 72px;
+    }
+    .copyright p {
+        font-size: 11px;
+        color: #fff;
+    }
     .work {
         width: 100%;
         height: 100%;
@@ -2451,21 +2536,6 @@ p.menu-text-title {
     .seo-choose li {
         margin-left: 25px;
         margin-right: 15px;
-    }
-    .contact-details {
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-        flex-direction: column;
-        gap: 0px;
-    }
-    .copyright {
-        width: 100%;
-        margin-left: 0;
-    }
-    .copyright p {
-        font-size: 11px;
-        color: #292726;
     }
     .contact-details.responsive {
         bottom: 80px;
