@@ -16,6 +16,46 @@ document.addEventListener("DOMContentLoaded", function() {
     
   });
 
+  var swiperDev = new Swiper(".dev-sections.swiper", {
+    spaceBetween: 24,
+    loop: true,
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1349: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+          spaceBetween: 24,
+        },
+    },
+  });
+
+  var swiperDigital = new Swiper(".digital-sections.swiper", {
+    spaceBetween: 24,
+    loop: true,
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1349: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+        },
+    },
+  });
+
 (function ($) {
     "use stict";
     var count = 1;
@@ -363,3 +403,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 })(jQuery);
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var sections = document.querySelectorAll("section");
+//     var indicatorDots = document.querySelectorAll("#page-indicator .dot");
+    
+//     window.addEventListener("scroll", function() {
+//       var scrollPosition = window.scrollY || window.pageYOffset;
+      
+//       sections.forEach(function(section, index) {
+//         var top = section.offsetTop - 100; 
+        
+//         if (scrollPosition >= top) {
+//           indicatorDots.forEach(function(dot) {
+//             dot.classList.remove("active");
+//           });
+//           indicatorDots[index].classList.add("active");
+//         }
+//       });
+//     });
+//   });
+  
