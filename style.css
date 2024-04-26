@@ -112,7 +112,7 @@ body p {
 .header-logo img {
     max-width: none;
     max-height: none;
-    width: 100px;
+    width: 97px;
 }
 
 .site-content {
@@ -282,12 +282,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home */
 .home {
-    background: url(assets/experimentvideo.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: calc(100vw - 100px);
     height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1078,56 +1078,6 @@ label {
 }
 
 /* ===================================
-   1 .1 Tipper CSS
-====================================== */
-
-.tipper {
-    width: 100%;
-    min-height: 1px;
-    position: absolute;
-    top: -999px;
-    left: -999px;
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s linear;
-    max-width: 500px;
-}
-
-.tipper-visible {
-    opacity: 1;
-}
-
-.tipper-content {
-    background: #111;
-    border-radius: 3px;
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 22px;
-    margin: 0;
-    padding: 10px 15px;
-    position: relative;
-    line-height: 28px;
-    font-weight: 700;
-}
-
-.tipper-caret {
-    width: 0;
-    height: 0;
-    content: '';
-    display: block;
-    margin: 0;
-    position: absolute;
-}
-
-.tipper-left .tipper-content {
-    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.35);
-}
-
-
-
-/* ===================================
     2. Menu CSS
 ====================================== */
 
@@ -1325,6 +1275,7 @@ label {
     width: 100px;
     height: 100vh;
     background-color: #000;
+    border-right: 2px solid #f9b000;
     left: 0px;
     top: 0;
     z-index: 999;
@@ -1763,26 +1714,7 @@ p.menu-text-title {
     margin-left: 10px;
 }
 
-/* #page-indicator {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dot.active {
-    background-color: #333;
-  } */
+
   
 
 /* ===================================
@@ -2255,6 +2187,7 @@ p.menu-text-title {
 @media (max-width: 400px) {
     .menu-right-part {
         min-height: 80px;
+        border-right: none;
     }
     .header-logo {
         top: 8px;
@@ -2565,4 +2498,3 @@ p.menu-text-title {
         margin-bottom: 150px;
     }
 }
-
