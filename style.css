@@ -324,11 +324,12 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     width: calc(100vw - 100px);
+    background-color: #000;
 }
 
 .approach h3 {
     font-size: 60px;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
 }
 
