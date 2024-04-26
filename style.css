@@ -843,15 +843,15 @@ label {
 
 .service-main-list li:nth-child(1) a {
     font-size: 130px;
-    color: #15616d;
+    color: #7077A1;
 }
 
 .service-main-list li:nth-child(2) a {
-    color: #ca7a2f;
+    color: #F57D1F;
 }
 
 .service-main-list li:nth-child(3) a {
-    color: #c5587b;
+    color: #50727B;
     line-height: 0.5;
 }
 
@@ -913,20 +913,14 @@ label {
 .digital-sections {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .creative-row,
 .dev-row,
 .digital-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0 20px;
-    align-items: center;
+    display: flex;
     justify-content: center;
-}
-
-.digital-row {
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .creative-list h4,
@@ -936,9 +930,21 @@ label {
     color: #f9b000;
 }
 
+.creative-list h4 {
+    color: #9caaff;
+}
+
+.dev-list h4 {
+    color: #f88934;
+}
+
+.digital-list h4 {
+    color: #72e7d4;
+}
+
 .creative-list,
-.dev-list,
-.digital-list {
+.dev-list.swiper-slide,
+.digital-list.swiper-slide {
     background: #000;
     color: #fff;
     margin-top: 24px;
@@ -952,13 +958,10 @@ label {
     -ms-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    width: 375px;
+    max-width: 360px;
+    margin: 0 20px;
+    height: 100%;
 } 
-
-.digital-list {
-    width: 575px;
-    padding: 40px 45px;
-}
 
 .creative-list:hover,
 .dev-list:hover,
@@ -991,6 +994,53 @@ label {
 .dev-icon img,
 .digital-icon img {
     border-bottom-left-radius: 12px;
+}
+
+.swiper {
+    overflow: initial;
+  } 
+  
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
+  
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    background: #000;
+    top: 45%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #f9b000;
+    font-size: 24px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: none;
+}
+
+.swiper-button-lock {
+    display: block;
+}
+  
+.swiper-button-prev {
+    left: -18px;
+}
+
+.swiper-button-prev i {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+}
+
+.swiper-button-next i {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+}
+  
+.swiper-button-next {
+    left: 1180px;
 }
 
 /* SEO */
