@@ -284,26 +284,11 @@ h1, h2, h3, h4, h5, h6 {
 .home {
     width: calc(100vw - 100px);
     height: 100%;
-    background: linear-gradient(-45deg, #4CAF50, #2196F3, #FFEB3B, #FF5722);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 /* About */
 .about-us {
