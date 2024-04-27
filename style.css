@@ -304,19 +304,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: flex;
     align-items: center;
-    animation: zoomInOut 10s infinite alternate;
-}
-
-@keyframes zoomInOut {
-    0% {
-        transform: scale(0.8); 
-    }
-    50% {
-        transform: scale(0.4); 
-    }
-    100% {
-        transform: scale(0.8); 
-    }
 }
 
 /* APPROACH */
@@ -343,9 +330,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* CONTACT & COPYRIGHT */
+
+.contact-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+    position: relative;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,27 +353,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name-logo {
+    position: absolute;
+    top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 80px;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .name-logo .name {
-    font-size: 80px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     color: #fff;
     border-right: 1px solid #fff;
     padding-right: 34px;
     margin-right: 40px;
-    height: 100%;
 }
 
 .name-logo .logo {
-    width: 100px;
+    width: 80px;
 }
 
 .name-logo .logo img{
@@ -449,7 +447,6 @@ h1, h2, h3, h4, h5, h6 {
     width: calc(100vw - 100px);
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 9999;
@@ -460,14 +457,16 @@ h1, h2, h3, h4, h5, h6 {
 .flag-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    position: absolute;
+    left: 170px;
+    top: 95px;
 }
 
 .flag-container .flag1,
 .flag-container .flag2 {
     min-width: 118px;
-    margin: 0 19px 38px;
+    margin-bottom: 30px;
     width: 118px;
 }
 
@@ -486,13 +485,14 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 150px;
 }
 
 .work .content p{
     width: 100%;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
-    letter-spacing: 0.6;
+    letter-spacing: 0.4;
     display: flex;
     align-items: center;
 }
@@ -2295,34 +2295,42 @@ p.menu-text-title {
     .approach-img {
         height: auto;
     }
-    .contact-copyright {
-        width: 100%;
+    .contact-work {
         height: calc(100vh - 80px);
+        width: 100%;
+    }
+    .contact-copyright {
+        height: 100%;
+        width: 100%;
     }
     .name-logo {
-        flex-direction: column;
+        margin-bottom: 10px;
     }
     .name-logo .name {
-        margin-bottom: 30px;
-        font-size: 60px;
+        font-size: 30px;
         border-right: none;
-        padding-right: 0;
-        margin-right: 0;
+        margin: 0;
+        padding: 0;
     }
     .contact-details {
         flex-direction: column;
         width: 100%;
         margin-left: 0;
         gap: 0px;
-        bottom: 130px;
+        bottom: 45px;
+    }
+    .contact-phone, 
+    .contact-mail, 
+    .contact-location {
+        font-size: 14px;
     }
     .copyright {
         width: 100%;
         margin-left: 0;
-        bottom: 72px;
+        bottom: -8px;
     }
     .copyright p {
-        font-size: 11px;
+        font-size: 12px;
         color: #fff;
     }
     .work {
@@ -2330,13 +2338,19 @@ p.menu-text-title {
         height: 100%;
         padding-left: 0;
     }
+    .flag-container {
+        flex-direction: row;
+        top: 20px;
+        left: 46px;
+        gap: 20px;
+    }
+
     .work .content {
-        margin-top: -20px;
-        max-width: 320px;
+        max-width: 331px;
+        margin-left: 0;
     }
     .work .content p {
-        font-size: 17px;
-        margin-bottom: 130px;
+        font-size: 16px;
     }
     .horizontal-slider .no-horizontal-slider {
         margin-left: 0;
