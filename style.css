@@ -284,11 +284,15 @@ h1, h2, h3, h4, h5, h6 {
 .home {
     width: calc(100vw - 100px);
     height: 100%;
-    background: #000;
+    background: url(assets/experimentvideo_6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 /* About */
 .about-us {
@@ -2271,6 +2275,7 @@ p.menu-text-title {
         height: calc(100vh - 80px);
         background-position: center;
         background-size: contain;
+        background-color: #000;
         width: 100%;
     }
     .home h1 {
