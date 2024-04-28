@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   });
 
-
   document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         function counter(id, start, end, duration){
@@ -104,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }, step);
         }
         counter("count1", 0, 50, 5000);
-        counter("count2", 0, 200, 7000);
-        counter("count3", 0, 120, 6000);
+        counter("count2", 0, 200, 5000);
+        counter("count3", 0, 120, 5000);
     }, 4000);
 });
 
