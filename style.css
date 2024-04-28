@@ -407,6 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 /* CONTACT & COPYRIGHT */
 
 .contact-work {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
     position: relative;
-    height: 350px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,16 +430,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .name-logo {
     position: absolute;
-    top: 12px;
+    top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 
 .name-logo .name {
-    font-size: 40px;
+    font-size: 46px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     color: #fff;
@@ -448,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name-logo .logo {
-    width: 80px;
+    width: 100px;
 }
 
 .name-logo .logo img{
@@ -479,12 +481,24 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 30px;
 }
 
+.contact-num,
+.contact-mails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-location {
+    margin-bottom: 5px;
+}
+
 .contact-phone, 
 .contact-mail,
 .contact-location {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .contact-phone i, 
@@ -523,8 +537,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 9999;
+    justify-content: space-evenly;
     position: relative;
     overflow: hidden;
 }
@@ -533,16 +546,17 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    left: 170px;
-    top: 95px;
 }
 
 .flag-container .flag1,
 .flag-container .flag2 {
-    min-width: 118px;
+    min-width: 100px;
     margin-bottom: 30px;
-    width: 118px;
+    width: 100px;
+}
+
+.flag-container .flag2 {
+    margin-bottom: 0;
 }
 
 .flag-container .flag1 img,
@@ -554,13 +568,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work .content {
-    width: 700px;
+    width: 750px;
     text-align: center;
     color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
 }
 
 .work .content p{
@@ -570,6 +583,28 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.4;
     display: flex;
     align-items: center;
+}
+
+.contact-work .backbtn {
+    position: absolute;
+    bottom: 26px;
+    right: 95px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    outline: none;
+    border: none;
+    background: #000;
+    border: 2px solid #000;
+    color: #f9b000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-work .backbtn:hover {
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
 }
 
 .contact-details.subservice {
