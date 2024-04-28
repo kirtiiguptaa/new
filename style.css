@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     width: calc(100vw - 100px);
-    background-color: #1D1D1B;
+    background-color: #5b5b55;
 }
 
 .approach-content {
@@ -348,12 +348,12 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .approach h1 {
-    font-size: 60px;
+    font-size: 74px;
     font-weight: 900;
     color: #fff;
     text-transform: uppercase;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: -15px;
 }
 
 .approach-right {
@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .approach-num {
     margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 .approach-num:last-child {
@@ -391,6 +392,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 240px;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+.approach-num.num1 hr,
+.approach-num.num3 hr {
+    width: 200px;
 }
 
 .approach-num .num-name {
