@@ -422,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
     position: relative;
-    height: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -583,31 +583,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     font-size: 28px;
     font-weight: 400;
-    letter-spacing: 0.4;
     display: flex;
     align-items: center;
-}
-
-.contact-work .backbtn {
-    position: absolute;
-    bottom: 26px;
-    right: 95px;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 14px;
-    outline: none;
-    border: none;
-    background: #000;
-    border: 2px solid #000;
-    color: #f9b000;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.contact-work .backbtn:hover {
-    color: #000;
-    background: #fff;
-    border: 2px solid #000;
 }
 
 .contact-details.subservice {
@@ -640,7 +617,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
     bottom: 0;
 }
-
 .swiper-slide {
     overflow: hidden;
 }
