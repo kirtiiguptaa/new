@@ -315,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     width: calc(100vw - 100px);
+    /* background-color: #5b5b55; */
     background: url(https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -491,6 +492,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.contact-num a:last-child {
+    margin-left: 30px;
+}
+
+.contact-mails a:last-child {
+    margin-left: 16px;
+}
+
 .contact-location {
     margin-bottom: 5px;
 }
@@ -507,9 +516,15 @@ h1, h2, h3, h4, h5, h6 {
 .contact-phone i, 
 .contact-mail i,
 .contact-location i {
-    margin-right: 8px;
+    margin-right: 10px;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.contact-phone i, 
+.contact-mail i {
+    position: relative;
+    top: 10px;
 }
 
 .contact-phone:hover, 
@@ -617,6 +632,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
     bottom: 0;
 }
+
 .swiper-slide {
     overflow: hidden;
 }
@@ -977,6 +993,7 @@ label {
     align-items: start;
     padding: 50px 10px 60px 150px;
     margin-left: -20px;
+    overflow: hidden;
 }
 
 .container .digital-services {
@@ -1012,7 +1029,6 @@ label {
 .dev-row,
 .digital-row {
     display: flex;
-    justify-content: center;
 }
 
 .creative-list h4,
@@ -1034,6 +1050,11 @@ label {
     color: #72e7d4;
 }
 
+.dev-sections.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .creative-list,
 .dev-list.swiper-slide,
 .digital-list.swiper-slide {
@@ -1050,7 +1071,7 @@ label {
     -ms-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    max-width: 360px;
+    max-width: 330px;
     margin: 0 20px;
     height: 100%;
 } 
@@ -1107,9 +1128,9 @@ label {
     font-size: 24px;
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+/* .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: none;
-}
+} */
 
 .swiper-button-lock {
     display: block;
@@ -2378,14 +2399,51 @@ p.menu-text-title {
     .approach {
         width: 100%;
     }
-    .approach h3 {
-        font-size: 45px;
+    .approach-content {
+        flex-direction: column;
+        height: 100%;
     }
-    .approach-img {
-        height: auto;
+    .approach-left {
+        left: 0;
+        top: 40px;
+    } 
+    .expertise-scale {
+        display: none;
+    }
+    .approach h1 {
+        font-size: 40px;
+        margin-bottom: -16px;
+    }
+    .approach-right {
+        right: 0;
+        top: 0;
+        left: 10px;
+    }
+    .approach-right .approach-numbers {
+        gap: 0;
+        margin-left: 10px;
+    }
+    .approach-num {
+        margin-bottom: 20px;
+    }
+    .approach-num .num {
+        font-size: 40px;
+    }
+    .approach-num .num-name {
+        display: flex;
+    }
+    .approach-num.num3 .num-name,
+    .approach-num.num4 .num-name {
+        margin-left: -25px;
+    } 
+    .approach-num.num1 hr, 
+    .approach-num.num3 hr {
+        width: 0;
+    }
+    .approach-num hr {
+        width: 0;
     }
     .contact-work {
-        height: calc(100vh - 80px);
         width: 100%;
     }
     .contact-copyright {
@@ -2433,7 +2491,6 @@ p.menu-text-title {
         left: 46px;
         gap: 20px;
     }
-
     .work .content {
         max-width: 331px;
         margin-left: 0;
