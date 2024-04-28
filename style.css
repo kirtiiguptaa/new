@@ -318,15 +318,84 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1D1D1B;
 }
 
-.approach h3 {
-    font-size: 60px;
+.approach-content {
     color: #fff;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.approach-img {
-    height: calc(100vh - 100px);
+.approach-left {
+    position: relative;
+    left: 150px;
+    max-width: 400px;
+}
+
+.expertise-scale {
+    position: relative;
+    color: #fff;
+}
+
+.expertise-scale::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    top: -2px;
+    border-radius: 8px;
+} 
+
+.approach h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.approach-right {
+    position: relative;
+    right: 150px;
+    top: 20px;
+}
+
+.approach-right .approach-numbers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.approach-num {
+    margin-bottom: 40px;
+}
+
+.approach-num:last-child {
+    margin-bottom: 0;
+}
+
+.approach-num .num {
+    display: flex;
+}
+
+.approach-num .num {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.approach-num hr {
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.approach-num .num-name {
+    font-size: 14px;
+    margin-bottom: 0;
 }
 
 /* CONTACT & COPYRIGHT */
