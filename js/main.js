@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // Swiper
   var swiper = new Swiper(".swiper", {
     slidesPerView: 3,
-    centeredSlides: true,
     spaceBetween: 24,
+    autoplay: true,
     loop: true,
     speed: 1000, 
     navigation: {
