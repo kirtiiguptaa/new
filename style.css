@@ -411,8 +411,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
     position: relative;
-    height: 460px;
-    top: -5px;
+    height: 465px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,41 +420,129 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #000;
 }
 
-.name-logo {
+.logo-contact {
+    display: flex;
+    align-items: center;
+}
+
+.logo-contact {
     position: absolute;
-    top: 120px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-contact .logo {
+    width: 100px;
+    position: relative;
+    bottom: 70px;
+    left: 100px;
+}
+
+.logo-contact .logo img{
+    width: 100%;
+}
+
+.contact-container {
+    position: relative;
+    right: 20px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100%;
 }
 
-.name-logo .name {
-    font-size: 46px;
+.contact-container .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-title {
+    position: relative;
+    bottom: 55px;
+}
+
+.contact-title h2{
     font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #f9b000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-container .contact-inputs {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px 25px;
+    color: #666;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-container .textarea {
+    height: 100px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+label {
+    margin-top: -10px;
+}
+
+.contact-container .contact-inputs:focus {
+    border: 2px solid #f9b000;
+}
+
+.contact-container .contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-container button {
     display: flex;
     align-items: center;
-    color: #fff;
-    border-right: 1px solid #fff;
-    padding-right: 34px;
-    margin-right: 40px;
+    justify-content: center;
+    position: relative;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid #f9b000;
+    border-radius: 50px;
+    background-color: #f9b000;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
-.name-logo .logo {
-    width: 100px;
-}
-
-.name-logo .logo img{
-    width: 100%;
+.contact-container button:hover {
+    color: #f9b000;
+    background-color: transparent;
+    border: 2px solid #f9b000;
 }
 
 .contact-details {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 500px);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    bottom: 80px;
+    bottom: 64px;
+    left: 0;
     position: absolute;
     padding-top: 3px;
     border-bottom: 1px solid #fff;
@@ -500,20 +587,20 @@ h1, h2, h3, h4, h5, h6 {
 .contact-phone i, 
 .contact-mail i {
     position: relative;
-    top: 10px;
+    top: 12px;
 }
 
 .contact-phone:hover, 
-.contact-mail:hover,
-.contact-location:hover {
+.contact-mail:hover {
     color: #fff;
     text-decoration: underline;
 }
 
 .copyright {
     position: absolute;
-    bottom: 24px;
-    width: 100%;
+    bottom: 18px;
+    left: 0;
+    width: calc(100vw - 500px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -748,16 +835,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* CONTACT */
-.contact-container {
+.contact-container.contact-career {
     position: relative;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.contact-container .contact-form {
+.contact-container.contact-career .contact-form {
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -767,14 +853,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
 }
 
-.contact-container .contact-title h2{
+.contact-container.contact-career .contact-title h2{
     font-weight: 600;
     color: #000;
     font-size: 40px;
     margin-bottom: 5px;
 }
 
-.contact-container .contact-title hr {
+.contact-container.contact-career .contact-title hr {
     border: none;
     width: 120px;
     height: 5px;
@@ -783,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-.contact-container .contact-inputs {
+.contact-container.contact-career .contact-inputs {
     width: 800px;
     height: 50px;
     border: 1px solid #ccc;
@@ -795,25 +881,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-.contact-container .textarea {
+.contact-container.contact-career .textarea {
     height: 100px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-label {
+.contact-container.contact-career label {
     margin-top: -10px;
 }
 
-.contact-container .contact-inputs:focus {
+.contact-container.contact-career .contact-inputs:focus {
     border: 2px solid #f9b000;
 }
 
-.contact-container .contact-inputs::placeholder {
+.contact-container.contact-career .contact-inputs::placeholder {
     color: #a9a9a9;
 }
 
-.contact-container button {
+.contact-container.contact-career button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -830,7 +916,7 @@ label {
     margin-bottom: 50px;
 }
 
-.contact-container button:hover {
+.contact-container.contact-career button:hover {
     color: #000;
     background-color: #fff;
     border: 2px solid #000;
@@ -847,7 +933,7 @@ label {
 
 .services-main .services {
     position: relative;
-    top: 20px;
+    top: 5px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -910,25 +996,26 @@ label {
 
 .service-content {
     display: flex;
-    flex-direction: row-reverse;
     position: absolute;
     width: 88%;
-    bottom: 10px;
+    bottom: 0;
     left: 130px;
 }
 
 .service-content .service-subheading {
-    font-size: 22px;
-    font-weight: 600;
-    max-width: 170px;
-    margin-top: 12px;
+    font-size: 46px;
+    font-weight: 800;
     margin-right: 20px;
+    max-width: 200px;
+    margin-left: 50px;
 }
 
 .service-content .subservice-content {
     font-size: 18px;
     font-weight: 400;
-    flex: 1;
+    width: 75%;
+    right: 0;
+    position: absolute;
 }
 
 .container .creative-services,
@@ -1035,7 +1122,7 @@ label {
     transition: all .2s ease-in;
     max-width: 330px;
     margin: 0 20px;
-    height: 550px;
+    height: 450px;
 } 
 
 .swiper-wrapper{
