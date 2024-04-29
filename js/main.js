@@ -16,17 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
     
   });
 
+// Swiper
   var swiper = new Swiper(".swiper", {
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 24,
     loop: true,
+    speed: 1000, 
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 
+//  Count
   document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         function counter(id, start, end, duration){
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         counter("count1", 0, 50, 5000);
         counter("count2", 0, 200, 5000);
         counter("count3", 0, 120, 5000);
-    }, 6000);
+    }, 30000);
 });
 
 (function ($) {
