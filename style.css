@@ -1027,7 +1027,7 @@ label {
     justify-content: flex-start;
     align-items: start;
     padding: 50px 10px 60px 150px;
-    margin-left: -20px;
+    margin-left: 0;
     overflow: hidden;
 }
 
@@ -1070,6 +1070,7 @@ label {
 .dev-list h4,
 .digital-list h4 {
     font-size: 20px;
+    font-weight: 700;
     color: #f9b000;
 }
 
@@ -1125,11 +1126,6 @@ label {
     height: 450px;
 } 
 
-.swiper-wrapper{
-    margin-top: 20px;
-    transition-timing-function: linear;
-}
-
 .creative-list:hover,
 .dev-list:hover,
 .digital-list:hover {
@@ -1169,6 +1165,11 @@ label {
 .swiper {
     overflow: initial;
 } 
+
+.swiper-wrapper{
+    margin-top: 20px;
+    transition-timing-function: linear;
+}
   
 .swiper-button-next::after, .swiper-button-prev::after {
     content: "";
@@ -1211,6 +1212,11 @@ label {
   
 .swiper-button-next {
     left: 1170px;
+}
+
+.mobile-dev-services,
+.mobile-digital-services {
+    display: none;
 }
 
 /* SEO */
@@ -2462,7 +2468,7 @@ p.menu-text-title {
     }
     .approach-left {
         left: 0;
-        top: 40px;
+        top: 70px;
     } 
     .expertise-scale {
         display: none;
@@ -2660,11 +2666,13 @@ p.menu-text-title {
         font-size: 45px;
         text-align: center;
         margin-top: 110px;
+        margin-left: 0;
     }
     .service-main-list {
         padding: 0;
         margin-left: 0;
-        right: 10px;
+        right: 0;
+        left: 0;
         margin-top: 40px;
     }
     .service-main-list li {
@@ -2685,41 +2693,106 @@ p.menu-text-title {
     }
     .service-content .service-subheading {
         font-size: 20px;
-        font-weight: 700;    
+        font-weight: 700;
+        margin-left: 0;
+        max-width: 100%;
+        margin-right: 0;   
     }
     .service-content .subservice-content {
         font-size: 17px;
         font-weight: 400;
         line-height: 1.6;
+        left: 12px;
+        right: 0;
+        width: 100%;
+        margin-top: 35px;
     }
-    .creative-row, 
-    .dev-row, 
-    .digital-row  {
+    .container .dev-services,
+    .container .digital-services {
+        display: none;
+    }
+    .mobile-dev-services,
+    .mobile-digital-services {
+        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        overflow: hidden;
+    }
+    .mobile-dev-services .dev-row,
+    .mobile-digital-services .digital-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobile-dev-services .dev-heading,
+    .mobile-digital-services .digital-heading {
+        font-size: 28px;
+        font-weight: 700;
+        border-bottom: 2px solid #f9b000;
+        margin: 0 20px;
+    }
+    .mobile-dev-services .dev-content,
+    .mobile-digital-services .digital-content {
+        font-size: 18px;
+        text-align: start;
+        margin-top: 10px;
+        margin: 0 20px;
+    }
+    .creative-list h4, 
+    .dev-list h4, 
+    .digital-list h4 {
+        font-size: 18px;
+    }
+    .mobile-dev-services .dev-list,
+    .mobile-digital-services .digital-list {
+        background: #000;
+        border: 2px solid #292726;
+        color: #fff;
+        margin-top: 24px;
+        padding: 20px 25px;
+        position: relative;
+        border-radius: 12px;
+        -webkit-box-shadow: 0 15px 20px 0 rgb(0 0 0 / 8%);
+        box-shadow: 0 15px 20px 0 rgb(0 0 0 / 8%);
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -ms-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        max-width: 330px;
+        margin: 0 20px;
+        height: 450px;
+        margin-bottom: 20px;
+    } 
+    .creative-sections {
+        margin: 0;
+    }
+    .creative-row {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
     .creative-list, 
     .dev-list, 
     .digital-list {
         width: 310px;
+        margin: 0;
     }
     .digital-list {
         padding: 20px 25px;
     }
-    .container .creative-services, 
-    .container .dev-services, 
-    .container .digital-services {
+    .container .creative-services {
         height: 100%;
 	    padding: 20px 15px;
         margin-left: 0;
+        margin-top: 330px;
     }
-    .creative-services .creative-content, 
-    .dev-services .dev-content, 
-    .digital-services .digital-content {
+    .creative-services .creative-content {
 	    font-size: 18px;
-    }
-    .creative-icon, .dev-icon, .digital-icon {
-        width: 40px;
-        height: 55px;
+        margin: 10px 0;
     }
     .container .services-main.seo {
         display: block;
