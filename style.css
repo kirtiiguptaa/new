@@ -42,9 +42,26 @@ body.wait-preloader {
     overflow: hidden;
 }
 
+*::selection {
+    background-color: #f9b000;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f9b000;
+    border-radius: 50px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    height: 100vh;
     line-height: 36px;
     font-weight: 400;
     color: #000000;
@@ -68,39 +85,12 @@ body a {
     border-color: .2s linear;
 }
 
-body a:hover {
-    color: #acacac;
-}
-
-body p {
-    margin-bottom: 16px;
-}
-
 .site-wrapper img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     display: block;
-}
-
-.doc-loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    background-color: #fff;
-}
-
-.doc-loader img {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;    
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .header-logo {
@@ -112,7 +102,7 @@ body p {
 .header-logo img {
     max-width: none;
     max-height: none;
-    width: 100px;
+    width: 97px;
 }
 
 .site-content {
@@ -282,17 +272,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home */
 .home {
-    background: url(assets/home.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: calc(100vw - 100px);
     height: 100%;
+    background: url(assets/experimentvideo10.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* About */
 .about-us {
-    background: url(assets/aboutpage.webp);
+    background: url(assets/90CENIAabout.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -300,48 +294,304 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: flex;
     align-items: center;
-    animation: zoomInOut 10s infinite alternate;
-}
-
-@keyframes zoomInOut {
-    0% {
-        transform: scale(0.8); 
-    }
-    50% {
-        transform: scale(0.4); 
-    }
-    100% {
-        transform: scale(0.8); 
-    }
 }
 
 /* APPROACH */
 .approach {
     font-family: "Montserrat", sans-serif;
-    background-color: #000;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100vw - 100px);
-    left: 100px;
-}
-
-.approach h3 {
-    font-size: 60px;
-    color: #fff;
-    line-height: 1;
-}
-
-/* WORK */
-.work {
-    width: calc(100vw - 100px);
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    width: calc(100vw - 100px);
+    background: url(assets/approachbg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.approach-content {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.approach-left {
+    position: relative;
+    left: 150px;
+    max-width: 400px;
+}
+
+.expertise-scale {
+    position: relative;
+    color: #fff;
+}
+
+.expertise-scale::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    top: -2px;
+    border-radius: 8px;
+} 
+
+.approach h1 {
+    font-size: 66px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: -12px;
+}
+
+.approach-right {
+    position: relative;
+    right: 150px;
+    top: 24px;
+}
+
+.approach-right .approach-numbers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.approach-num {
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.approach-num:last-child {
+    margin-bottom: 0;
+}
+
+.approach-num .num {
+    display: flex;
+}
+
+.approach-num .num {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.approach-num hr {
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.approach-num.num1 hr,
+.approach-num.num3 hr {
+    width: 200px;
+}
+
+.approach-num .num-name {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* CONTACT & COPYRIGHT */
+
+.contact-work {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contact-copyright {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    height: calc(100% - 170px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 100px);
+    background-color: #000;
+}
+
+.logo-contact {
+    display: flex;
+    align-items: center;
+}
+
+.logo-contact {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-contact .logo {
+    width: 500px;
+    position: relative;
+    bottom: 80px;
+    left: 120px;
+}
+
+.logo-contact .logo img{
+    width: 100%;
+}
+
+.contact-container {
+    position: relative;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 24px;
+}
+
+.contact-container .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-container .contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px 25px;
+    color: #666;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-container .textarea {
+    height: 100px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+label {
+    margin-top: -10px;
+}
+
+.contact-container .contact-inputs:focus {
+    border: 2px solid #f9b000;
+}
+
+.contact-container .contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-container button {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid #f9b000;
+    border-radius: 50px;
+    background-color: #f9b000;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    color: #f9b000;
+    background-color: transparent;
+    border: 2px solid #f9b000;
+}
+
+.contact-details {
+    width: calc(100vw - 600px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 64px;
+    left: 0;
+    position: absolute;
+    padding-top: 3px;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-num,
+.contact-mails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-num a:last-child {
+    margin-left: 30px;
+}
+
+.contact-mails a:last-child {
+    margin-left: 16px;
+}
+
+.contact-location {
+    margin-bottom: 5px;
+}
+
+.contact-phone, 
+.contact-mail,
+.contact-location {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contact-phone i, 
+.contact-mail i,
+.contact-location i {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-phone i, 
+.contact-mail i {
+    position: relative;
+    top: 12px;
+}
+
+.contact-phone:hover, 
+.contact-mail:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: calc(100vw - 600px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* WORK */
+.work {
+    width: calc(100vw - 100px);
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
     overflow: hidden;
 }
@@ -349,15 +599,19 @@ h1, h2, h3, h4, h5, h6 {
 .flag-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    margin: 15px 120px 0;
 }
 
 .flag-container .flag1,
 .flag-container .flag2 {
-    min-width: 118px;
-    margin: 0 19px 38px;
-    width: 118px;
+    min-width: 80px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.flag-container .flag2 {
+    margin-bottom: 0;
 }
 
 .flag-container .flag1 img,
@@ -369,7 +623,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work .content {
-    width: 700px;
+    width: 750px;
     text-align: center;
     color: #000;
     display: flex;
@@ -379,9 +633,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .work .content p{
     width: 100%;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
-    letter-spacing: 0.6;
     display: flex;
     align-items: center;
 }
@@ -440,15 +693,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .contact-btn {
-    font-size: 20px;
-    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f9b000;
     background-color: #000;
-    padding: 2px 14px;
-    border: none;
-    border-radius: 32px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+    padding: 0px 6px;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 86px;
+    right: 12px;
     border: 3px solid #000;
     text-transform: capitalize;
     z-index: 9;
@@ -502,7 +755,6 @@ h1, h2, h3, h4, h5, h6 {
 .career .career-title {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
-    margin-top: 10px;
     color: #fff;
 }
 
@@ -536,7 +788,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .career .button {
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -558,32 +809,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* CONTACT */
-.contact-container {
-    height: 100vh;
+.contact-container.contact-career {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.contact-container .contact-form {
+.contact-container.contact-career .contact-form {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
 }
 
-.contact-container .contact-title h2{
+.contact-container.contact-career .contact-title h2{
     font-weight: 600;
     color: #000;
     font-size: 40px;
     margin-bottom: 5px;
 }
 
-.contact-container .contact-title hr {
+.contact-container.contact-career .contact-title hr {
     border: none;
     width: 120px;
     height: 5px;
@@ -592,60 +843,57 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-.contact-container .contact-inputs {
-    width: 800px;
+.contact-container.contact-career .contact-inputs {
+    width: 700px;
     height: 50px;
     border: 1px solid #ccc;
     outline: none;
-    padding: 5px 25px;
+    padding: 13px 25px;
     color: #666;
     font-weight: 500;
     border-radius: 50px;
     margin-bottom: 20px;
 }
 
-.contact-container .textarea {
-    height: 140px;
+.contact-container.contact-career .textarea {
+    height: 100px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-label {
+.contact-container.contact-career label {
     margin-top: -10px;
 }
 
-.contact-container .contact-inputs:focus {
+.contact-container.contact-career .contact-inputs:focus {
     border: 2px solid #f9b000;
 }
 
-.contact-container .contact-inputs::placeholder {
+.contact-container.contact-career .contact-inputs::placeholder {
     color: #a9a9a9;
 }
 
-.contact-container button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    position: relative;
-    left: 40%;
+.contact-container.contact-career button {
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: #f9b000;
     border: 2px solid #000;
     border-radius: 50px;
     background-color: #000;
     cursor: pointer;
-    margin-bottom: 20px;
 }
 
-.contact-container button:hover {
+.contact-container.contact-career button:hover {
     color: #000;
     background-color: #fff;
     border: 2px solid #000;
 }
 
 /* SERVICES */
+.services-wrapper {
+    background-color: #fff4ea;
+}
+
 .container .services-main {
     position: relative;
     width: 100%;
@@ -656,7 +904,7 @@ label {
 
 .services-main .services {
     position: relative;
-    top: 20px;
+    top: 5px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -670,7 +918,7 @@ label {
 
 .container .services-heading {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
     color: #292726;
     text-align: start;
@@ -680,7 +928,7 @@ label {
 
 .service-main-list {
     text-align: center;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
     position: absolute;
     right: 70px;
 }
@@ -695,7 +943,7 @@ label {
 }
 
 .service-main-list li a {
-    font-size: 108px;
+    font-size: 100px;
     font-weight: 900;
     text-transform: capitalize;
     line-height: 0.4;
@@ -704,66 +952,76 @@ label {
 }
 
 .service-main-list li:nth-child(1) a {
-    font-size: 130px;
-    color: #15616d;
+    font-size: 120px;
+    color: #7077A1;
 }
 
 .service-main-list li:nth-child(2) a {
-    color: #ca7a2f;
+    color: #F57D1F;
 }
 
 .service-main-list li:nth-child(3) a {
-    color: #c5587b;
+    color: #50727B;
     line-height: 0.5;
 }
 
 .service-content {
     display: flex;
-    flex-direction: column;
     position: absolute;
     width: 88%;
-    bottom: -15px;
+    bottom: 10px;
     left: 130px;
 }
 
 .service-content .service-subheading {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 0;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    margin-right: 20px;
+    max-width: 350px;
+    bottom: 6px;
+    position: absolute;
 }
 
 .service-content .subservice-content {
     font-size: 18px;
     font-weight: 400;
+    bottom: 0;
+    width: 67%;
+    right: 0;
+    position: absolute;
 }
 
 .container .creative-services,
 .container .dev-services,
 .container .digital-services {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
     padding: 50px 10px 60px 150px;
-    margin-left: -20px;
+    margin-left: 0;
+    overflow: hidden;
 }
 
 .container .digital-services {
     margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .creative-services .creative-heading,
 .dev-services .dev-heading,
 .digital-services .digital-heading {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 800;
     border-bottom: 2px solid #f9b000;
 }
 
 .creative-services .creative-content,
 .dev-services .dev-content,
 .digital-services .digital-content {
-    font-size: 22px;
+    font-size: 18px;
     text-align: start;
     margin-top: 10px;
 }
@@ -773,35 +1031,65 @@ label {
 .digital-sections {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .creative-row,
 .dev-row,
 .digital-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0 20px;
-    align-items: center;
-    justify-content: center;
+    display: flex;
 }
 
-.digital-row {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.creative-list a h4,
-.dev-list a h4,
-.digital-list a h4 {
+.creative-list h4,
+.dev-list h4,
+.digital-list h4 {
     font-size: 20px;
+    font-weight: 700;
     color: #f9b000;
 }
 
+.creative-list h4 {
+    color: #9caaff;
+}
+
+.dev-list h4 {
+    color: #f88934;
+}
+
+.digital-list h4 {
+    color: #72e7d4;
+}
+
+.creative-sections {
+    margin: 40px 10px;
+}
+
+.dev-sections,
+.digital-sections {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dev-sections.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .creative-list,
-.dev-list,
-.digital-list {
+.dev-list.swiper-slide,
+.digital-list.swiper-slide {
     background: #000;
+    border: 2px solid #292726;
     color: #fff;
-    margin-top: 24px;
+    margin-top: 40px;
     padding: 20px 25px;
     position: relative;
     border-radius: 12px;
@@ -812,25 +1100,15 @@ label {
     -ms-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    width: 375px;
+    max-width: 320px;
+    margin: 0 30px;
+    height: 380px;
 } 
-
-.digital-list {
-    width: 575px;
-    padding: 40px 45px;
-}
 
 .creative-list:hover,
 .dev-list:hover,
 .digital-list:hover {
-    background: #f9b000;
-    color: #000;
-}
-
-.creative-list:hover h4,
-.dev-list:hover h4,
-.digital-list:hover h4 {
-    color: #fff;
+    background: #292726;
 }
 
 .creative-icon,
@@ -850,7 +1128,74 @@ label {
 .creative-icon img,
 .dev-icon img,
 .digital-icon img {
-    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.learn-more {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: #fff;
+}
+.learn-more:hover {
+    color: #72e7d4;
+}
+
+.swiper {
+    overflow: initial;
+} 
+
+.swiper-wrapper{
+    margin-top: 20px;
+    transition-timing-function: linear;
+}
+  
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
+  
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    background: #000;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #f9b000;
+    font-size: 24px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: none;
+}
+
+.swiper-button-lock {
+    display: block;
+}
+  
+.swiper-button-prev {
+    left: 1130px;
+}
+
+.swiper-button-prev i {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+}
+
+.swiper-button-next i {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+}
+  
+.swiper-button-next {
+    left: 1170px;
+}
+
+.mobile-dev-services,
+.mobile-digital-services {
+    display: none;
 }
 
 /* SEO */
@@ -888,7 +1233,7 @@ label {
 }
 
 .service-description .description-content {
-    font-weight: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 10px;
 }
@@ -898,6 +1243,10 @@ label {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+}
+
+.seo-choose li:last-child{
+    padding-bottom: 30px;
 }
 
 .seo-expertise .expertise-title,
@@ -934,56 +1283,6 @@ label {
 }
 
 /* ===================================
-   1 .1 Tipper CSS
-====================================== */
-
-.tipper {
-    width: 100%;
-    min-height: 1px;
-    position: absolute;
-    top: -999px;
-    left: -999px;
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s linear;
-    max-width: 500px;
-}
-
-.tipper-visible {
-    opacity: 1;
-}
-
-.tipper-content {
-    background: #111;
-    border-radius: 3px;
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 22px;
-    margin: 0;
-    padding: 10px 15px;
-    position: relative;
-    line-height: 28px;
-    font-weight: 700;
-}
-
-.tipper-caret {
-    width: 0;
-    height: 0;
-    content: '';
-    display: block;
-    margin: 0;
-    position: absolute;
-}
-
-.tipper-left .tipper-content {
-    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.35);
-}
-
-
-
-/* ===================================
     2. Menu CSS
 ====================================== */
 
@@ -1017,7 +1316,7 @@ label {
 .sm-clean a:hover, 
 .sm-clean a:focus, 
 .sm-clean a:active {
-    color: #ffffff;
+    color: #fff4ea;
     padding: 5px 0;
     font-size: 50px;
     line-height: 110%;
@@ -1181,12 +1480,12 @@ label {
     width: 100px;
     height: 100vh;
     background-color: #000;
+    border-right: 2px solid #f9b000;
     left: 0px;
     top: 0;
     z-index: 999;
     transition: 0.2s left cubic-bezier(0.22, 0.61, 0.36, 1), 
         0s 0.2s background linear;
-    height: 100%;
     overflow: visible;
 }
 
@@ -1619,6 +1918,9 @@ p.menu-text-title {
     margin-left: 10px;
 }
 
+
+  
+
 /* ===================================
     9. Responsive CSS
 ====================================== */
@@ -1628,7 +1930,7 @@ p.menu-text-title {
         margin-top: 11.4rem;
     }
     .service-main-list {
-        margin-top: 1.4rem;
+        margin-top: 1.8rem;
     }
 }
 
@@ -2089,6 +2391,7 @@ p.menu-text-title {
 @media (max-width: 400px) {
     .menu-right-part {
         min-height: 80px;
+        border-right: none;
     }
     .header-logo {
         top: 8px;
@@ -2123,6 +2426,7 @@ p.menu-text-title {
         height: calc(100vh - 80px);
         background-position: center;
         background-size: contain;
+        background-color: #000;
         width: 100%;
     }
     .home h1 {
@@ -2135,20 +2439,129 @@ p.menu-text-title {
     }
     .approach {
         width: 100%;
+        height: calc(100vh - 80px);
     }
-    .approach h3 {
-        font-size: 45px;
+    .approach-content {
+        flex-direction: column;
+        height: 100%;
+    }
+    .approach-left {
+        left: 0;
+        top: 70px;
+    } 
+    .expertise-scale {
+        display: none;
+    }
+    .approach h1 {
+        font-size: 40px;
+        margin-bottom: -16px;
+    }
+    .approach-right {
+        right: 0;
+        top: 0;
+        left: 10px;
+        margin-bottom: 60px;
+    }
+    .approach-right .approach-numbers {
+        gap: 0;
+        margin-left: 10px;
+    }
+    .approach-num {
+        margin-bottom: 20px;
+    }
+    .approach-num .num {
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-left: 12px;
+    }
+    .approach-num .num-name {
+        display: flex;
+        margin-top: -10px;
+    }
+    .approach-num.num1 .num,
+    .approach-num.num2 .num {
+        margin-bottom: -10px;
+    }
+    .approach-num.num3 .num-name,
+    .approach-num.num4 .num-name {
+        margin-left: -25px;
+        line-height: 1.2;
+    } 
+    .approach-num.num1 hr, 
+    .approach-num.num3 hr {
+        width: 0;
+    }
+    .approach-num hr {
+        width: 0;
+    }
+    .contact-work {
+        width: 100%;
+    }
+    .contact-copyright {
+        height: 100%;
+        width: 100%;
+    }
+    .logo-contact {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-contact .logo {
+        width: 300px;
+        left: 0;
+    }
+    .contact-container {
+        bottom: 380px;
+        right: 0;
+    }
+    .contact-container button {
+        left: 0;
+        padding: 8px 23px;
+    }
+    .name-logo {
+        margin-bottom: 10px;
+    }
+    .name-logo .name {
+        font-size: 30px;
+        border-right: none;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 0px;
+        bottom: 45px;
+    }
+    .contact-phone, 
+    .contact-mail, 
+    .contact-location {
+        font-size: 14px;
+    }
+    .copyright {
+        width: 100%;
+        margin-left: 0;
+        bottom: 5px;
+    }
+    .copyright p {
+        font-size: 12px;
+        color: #fff;
     }
     .work {
-        width: 100%;
-        padding-left: 0;
+        display: none;
+    }
+    .flag-container {
+        flex-direction: row;
+        top: 20px;
+        left: 46px;
+        gap: 20px;
     }
     .work .content {
-        margin-top: -20px;
-        max-width: 320px;
+        max-width: 331px;
+        margin-left: 0;
     }
     .work .content p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .horizontal-slider .no-horizontal-slider {
         margin-left: 0;
@@ -2173,32 +2586,39 @@ p.menu-text-title {
     }
     .career {
         padding-left: 0;
+        height: 100%;
     }
     .career-info {
         display: flex;
         align-items: center;
         flex-direction: column;
         left: 0px;
-        top: 58px;
+        top: 50px;
+        position: absolute;
+        height: 100%;
     }
     .career .career-title {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 50px;
     }
     .career .career-content {
         margin-top: -10px;
+        margin-bottom: 15px;
     }
     .career .career-content .content-title {
-        margin: 10px 20px;
-        width: 158px;
+        margin: 10px;
+        width: 122px;
+        font-size: 17px;
+        margin-top: 0;
     }
     .career .career-content p {
-        width: 330px;
+        width: 328px;
         font-size: 12px;
-        margin: 0 15px;
+        margin: 0 10px;
     }
-    .career .button {
-        margin-top: 20px;
+    .career .button a {
+        font-size: 14px;
+        padding: 0 8px;
     }
     .container section {
         margin-top: 70px;
@@ -2223,10 +2643,6 @@ p.menu-text-title {
     label {
         font-size: 14px;
     }
-    .contact-container button {
-        left: 28%;
-        padding: 8px 23px;
-    }
     .container {
         overflow-x: hidden;
     }
@@ -2248,11 +2664,13 @@ p.menu-text-title {
         font-size: 45px;
         text-align: center;
         margin-top: 110px;
+        margin-left: 0;
     }
     .service-main-list {
         padding: 0;
         margin-left: 0;
-        right: 10px;
+        right: 0;
+        left: 0;
         margin-top: 40px;
     }
     .service-main-list li {
@@ -2273,41 +2691,152 @@ p.menu-text-title {
     }
     .service-content .service-subheading {
         font-size: 20px;
-        font-weight: 700;    
+        font-weight: 700;
+        margin-left: 0;
+        max-width: 100%;
+        margin-right: 0;   
     }
     .service-content .subservice-content {
         font-size: 17px;
         font-weight: 400;
         line-height: 1.6;
+        left: 12px;
+        right: 0;
+        width: 100%;
+        margin-top: 5px;
+        bottom: auto;
     }
-    .creative-row, 
-    .dev-row, 
-    .digital-row  {
+    .container .dev-services,
+    .container .digital-services {
+        display: none;
+    }
+    .mobile-dev-services,
+    .mobile-digital-services {
+        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        overflow: hidden;
+    }
+    .mobile-dev-services .dev-row,
+    .mobile-digital-services .digital-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobile-dev-services .dev-heading,
+    .mobile-digital-services .digital-heading {
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 2px solid #f9b000;
+        margin: 0 20px;
+    }
+    .mobile-dev-services .dev-content,
+    .mobile-digital-services .digital-content {
+        font-size: 17px;
+        line-height: 1.6;
+        text-align: start;
+        margin-top: 10px;
+        margin: 0 20px;
+    }
+    .creative-list h4, 
+    .dev-list h4, 
+    .digital-list h4 {
+        font-size: 18px;
+    }
+    .mobile-dev-services .dev-list,
+    .mobile-digital-services .digital-list {
+        background: #000;
+        border: 2px solid #292726;
+        color: #fff;
+        margin-top: 24px;
+        padding: 20px 25px;
+        position: relative;
+        border-radius: 12px;
+        -webkit-box-shadow: 0 15px 20px 0 rgb(0 0 0 / 8%);
+        box-shadow: 0 15px 20px 0 rgb(0 0 0 / 8%);
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -ms-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        max-width: 300px;
+        margin: 0 20px;
+        height: 380px;
+        margin-bottom: 30px;
+    } 
+    .creative-sections {
+        margin: 0;
+    }
+    .creative-row {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
     .creative-list, 
     .dev-list, 
     .digital-list {
-        width: 310px;
+        width: 300px;
+        margin: 0;
     }
-    .digital-list {
-        padding: 20px 25px;
-    }
-    .container .creative-services, 
-    .container .dev-services, 
-    .container .digital-services {
+    .container .creative-services {
         height: 100%;
-	    padding: 20px 15px;
+	    padding: 20px 28px;
+        margin-left: 0;
+        margin-top: 330px;
+    }
+    .creative-services .creative-content {
+	    font-size: 17px;
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+    .container .services-main.seo {
+        display: block;
+        top: 80px;
+    }
+    .service.seo {
+        top: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .service-description {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .seo-expertise .expertise-title, 
+    .seo-choose .choose-title {
+        margin-left: 10px;
+    }
+    .seo-expertise li, 
+    .seo-choose li {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    .contact-details.responsive {
+        bottom: 80px;
+    }
+    .copyright.responsive {
+        bottom: 30px;
+    }
+    .contact-details.subservice {
+        width: 100%;
         margin-left: 0;
     }
-    .creative-services .creative-content, 
-    .dev-services .dev-content, 
-    .digital-services .digital-content {
-	    font-size: 18px;
+    .copyright.subservice {
+        width: 100%;
+        margin-left: 0;
     }
-    .creative-icon, .dev-icon, .digital-icon {
-        width: 40px;
-        height: 55px;
+    .contact-details.service {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .copyright.service {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .digital-col:last-child {
+        margin-bottom: 150px;
     }
 }
-

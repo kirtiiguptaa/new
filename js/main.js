@@ -12,9 +12,76 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var loader = document.getElementById("loader");
         loader.style.display = "none";
-    }, 4000); 
+    }, 3000); 
     
   });
+
+// Swiper
+var swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    slidesPerView: 3,
+    spaceBetween: 24,
+    mousewheel: true,
+    loop: true,
+    speed: 500,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 12,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+    },
+  });
+  
+
+//  Count
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        function counter(id, start, end, duration, callback) {
+            let obj = document.getElementById(id),
+                current = start,
+                range = end - start,
+                increment = end > start ? 1 : -1,
+                step = Math.abs(Math.floor(duration / range)),
+                timer;
+            
+            function updateCounter() {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                    setTimeout(() => {
+                        current = start;
+                        timer = setInterval(updateCounter, step);
+                    }, 1000);
+                }
+            }
+
+            timer = setInterval(updateCounter, step);
+
+            if (typeof callback === 'function') {
+                callback();
+            }
+        }
+
+        counter("count1", 0, 50, 5000);
+        counter("count2", 0, 200, 5000);
+        counter("count3", 0, 120, 5000);
+    }, 10000);
+});
+
+
 
 (function ($) {
     "use stict";
