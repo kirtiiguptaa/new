@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    height: 100vh;
     line-height: 36px;
     font-weight: 400;
     color: #000000;
@@ -273,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .home {
     width: calc(100vw - 100px);
     height: 100%;
-    background: url(assets/experimentvideo0.webp);
+    background: url(assets/experimentvideo10.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -285,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About */
 .about-us {
-    background: url(assets/aboutpage.webp);
+    background: url(assets/90CENIAabout.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -408,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
     position: relative;
-    height: calc(100% - 150px);
+    height: calc(100% - 170px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,8 +435,8 @@ h1, h2, h3, h4, h5, h6 {
 .logo-contact .logo {
     width: 500px;
     position: relative;
-    bottom: 70px;
-    left: 170px;
+    bottom: 80px;
+    left: 120px;
 }
 
 .logo-contact .logo img{
@@ -449,6 +450,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 24px;
 }
 
 .contact-container .contact-form {
@@ -458,32 +460,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-.contact-title {
-    position: relative;
-    bottom: 55px;
-}
-
-.contact-title h2{
-    font-weight: 600;
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 5px;
-}
-
-.contact-title hr {
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: #f9b000;
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .contact-container .contact-inputs {
-    width: 300px;
+    width: 400px;
     height: 50px;
     border: 1px solid #ccc;
     outline: none;
@@ -513,9 +493,6 @@ label {
 }
 
 .contact-container button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     padding: 10px 25px;
     font-size: 18px;
@@ -524,7 +501,6 @@ label {
     border-radius: 50px;
     background-color: #f9b000;
     cursor: pointer;
-    margin-bottom: 50px;
 }
 
 .contact-container button:hover {
@@ -534,7 +510,7 @@ label {
 }
 
 .contact-details {
-    width: calc(100vw - 500px);
+    width: calc(100vw - 600px);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -597,7 +573,7 @@ label {
     position: absolute;
     bottom: 18px;
     left: 0;
-    width: calc(100vw - 500px);
+    width: calc(100vw - 600px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -612,7 +588,7 @@ label {
 /* WORK */
 .work {
     width: calc(100vw - 100px);
-    height: calc(100vh - 465px);
+    height: 170px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -868,11 +844,11 @@ label {
 }
 
 .contact-container.contact-career .contact-inputs {
-    width: 800px;
+    width: 700px;
     height: 50px;
     border: 1px solid #ccc;
     outline: none;
-    padding: 10px 25px;
+    padding: 13px 25px;
     color: #666;
     font-weight: 500;
     border-radius: 50px;
@@ -898,20 +874,13 @@ label {
 }
 
 .contact-container.contact-career button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 154px;
-    position: relative;
-    left: 40%;
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: #f9b000;
     border: 2px solid #000;
     border-radius: 50px;
     background-color: #000;
     cursor: pointer;
-    margin-bottom: 50px;
 }
 
 .contact-container.contact-career button:hover {
@@ -949,7 +918,7 @@ label {
 
 .container .services-heading {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
     color: #292726;
     text-align: start;
@@ -959,7 +928,7 @@ label {
 
 .service-main-list {
     text-align: center;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
     position: absolute;
     right: 70px;
 }
@@ -974,7 +943,7 @@ label {
 }
 
 .service-main-list li a {
-    font-size: 108px;
+    font-size: 100px;
     font-weight: 900;
     text-transform: capitalize;
     line-height: 0.4;
@@ -983,7 +952,7 @@ label {
 }
 
 .service-main-list li:nth-child(1) a {
-    font-size: 130px;
+    font-size: 120px;
     color: #7077A1;
 }
 
@@ -1000,22 +969,25 @@ label {
     display: flex;
     position: absolute;
     width: 88%;
-    bottom: 0;
+    bottom: 10px;
     left: 130px;
 }
 
 .service-content .service-subheading {
-    font-size: 46px;
+    font-size: 56px;
     font-weight: 800;
+    line-height: 1;
     margin-right: 20px;
-    max-width: 200px;
-    margin-left: 50px;
+    max-width: 350px;
+    bottom: 6px;
+    position: absolute;
 }
 
 .service-content .subservice-content {
     font-size: 18px;
     font-weight: 400;
-    width: 75%;
+    bottom: 0;
+    width: 67%;
     right: 0;
     position: absolute;
 }
@@ -1035,21 +1007,21 @@ label {
 
 .container .digital-services {
     margin-bottom: 0;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .creative-services .creative-heading,
 .dev-services .dev-heading,
 .digital-services .digital-heading {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 800;
     border-bottom: 2px solid #f9b000;
 }
 
 .creative-services .creative-content,
 .dev-services .dev-content,
 .digital-services .digital-content {
-    font-size: 22px;
+    font-size: 18px;
     text-align: start;
     margin-top: 10px;
 }
@@ -1089,7 +1061,7 @@ label {
 }
 
 .creative-sections {
-    margin: 20px;
+    margin: 40px 10px;
 }
 
 .dev-sections,
@@ -1106,13 +1078,18 @@ label {
     margin-right: auto;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .creative-list,
 .dev-list.swiper-slide,
 .digital-list.swiper-slide {
     background: #000;
     border: 2px solid #292726;
     color: #fff;
-    margin-top: 24px;
+    margin-top: 40px;
     padding: 20px 25px;
     position: relative;
     border-radius: 12px;
@@ -1123,9 +1100,9 @@ label {
     -ms-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    max-width: 330px;
-    margin: 0 20px;
-    height: 450px;
+    max-width: 320px;
+    margin: 0 30px;
+    height: 380px;
 } 
 
 .creative-list:hover,
@@ -1151,7 +1128,7 @@ label {
 .creative-icon img,
 .dev-icon img,
 .digital-icon img {
-    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .learn-more {
@@ -1509,7 +1486,6 @@ label {
     z-index: 999;
     transition: 0.2s left cubic-bezier(0.22, 0.61, 0.36, 1), 
         0s 0.2s background linear;
-    height: 100%;
     overflow: visible;
 }
 
@@ -1954,7 +1930,7 @@ p.menu-text-title {
         margin-top: 11.4rem;
     }
     .service-main-list {
-        margin-top: 1.4rem;
+        margin-top: 1.8rem;
     }
 }
 
@@ -2463,6 +2439,7 @@ p.menu-text-title {
     }
     .approach {
         width: 100%;
+        height: calc(100vh - 80px);
     }
     .approach-content {
         flex-direction: column;
@@ -2483,6 +2460,7 @@ p.menu-text-title {
         right: 0;
         top: 0;
         left: 10px;
+        margin-bottom: 60px;
     }
     .approach-right .approach-numbers {
         gap: 0;
@@ -2493,13 +2471,21 @@ p.menu-text-title {
     }
     .approach-num .num {
         font-size: 40px;
+        margin-bottom: 0;
+        margin-left: 12px;
     }
     .approach-num .num-name {
         display: flex;
+        margin-top: -10px;
+    }
+    .approach-num.num1 .num,
+    .approach-num.num2 .num {
+        margin-bottom: -10px;
     }
     .approach-num.num3 .num-name,
     .approach-num.num4 .num-name {
         margin-left: -25px;
+        line-height: 1.2;
     } 
     .approach-num.num1 hr, 
     .approach-num.num3 hr {
@@ -2514,6 +2500,22 @@ p.menu-text-title {
     .contact-copyright {
         height: 100%;
         width: 100%;
+    }
+    .logo-contact {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-contact .logo {
+        width: 300px;
+        left: 0;
+    }
+    .contact-container {
+        bottom: 380px;
+        right: 0;
+    }
+    .contact-container button {
+        left: 0;
+        padding: 8px 23px;
     }
     .name-logo {
         margin-bottom: 10px;
@@ -2539,16 +2541,14 @@ p.menu-text-title {
     .copyright {
         width: 100%;
         margin-left: 0;
-        bottom: -8px;
+        bottom: 5px;
     }
     .copyright p {
         font-size: 12px;
         color: #fff;
     }
     .work {
-        width: 100%;
-        height: 100%;
-        padding-left: 0;
+        display: none;
     }
     .flag-container {
         flex-direction: row;
@@ -2643,10 +2643,6 @@ p.menu-text-title {
     label {
         font-size: 14px;
     }
-    .contact-container button {
-        left: 28%;
-        padding: 8px 23px;
-    }
     .container {
         overflow-x: hidden;
     }
@@ -2707,7 +2703,8 @@ p.menu-text-title {
         left: 12px;
         right: 0;
         width: 100%;
-        margin-top: 35px;
+        margin-top: 5px;
+        bottom: auto;
     }
     .container .dev-services,
     .container .digital-services {
@@ -2731,14 +2728,15 @@ p.menu-text-title {
     }
     .mobile-dev-services .dev-heading,
     .mobile-digital-services .digital-heading {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 700;
         border-bottom: 2px solid #f9b000;
         margin: 0 20px;
     }
     .mobile-dev-services .dev-content,
     .mobile-digital-services .digital-content {
-        font-size: 18px;
+        font-size: 17px;
+        line-height: 1.6;
         text-align: start;
         margin-top: 10px;
         margin: 0 20px;
@@ -2764,10 +2762,10 @@ p.menu-text-title {
         -ms-transition: all .2s ease-in;
         -o-transition: all .2s ease-in;
         transition: all .2s ease-in;
-        max-width: 330px;
+        max-width: 300px;
         margin: 0 20px;
-        height: 450px;
-        margin-bottom: 20px;
+        height: 380px;
+        margin-bottom: 30px;
     } 
     .creative-sections {
         margin: 0;
@@ -2775,26 +2773,24 @@ p.menu-text-title {
     .creative-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 30px;
     }
     .creative-list, 
     .dev-list, 
     .digital-list {
-        width: 310px;
+        width: 300px;
         margin: 0;
-    }
-    .digital-list {
-        padding: 20px 25px;
     }
     .container .creative-services {
         height: 100%;
-	    padding: 20px 15px;
+	    padding: 20px 28px;
         margin-left: 0;
         margin-top: 330px;
     }
     .creative-services .creative-content {
-	    font-size: 18px;
+	    font-size: 17px;
         margin: 10px 0;
+        line-height: 1.6;
     }
     .container .services-main.seo {
         display: block;
