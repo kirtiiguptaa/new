@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 .home {
     width: calc(100vw - 100px);
     height: 100%;
-    background: url(assets/experimentvideo_6.webp);
+    background: url(assets/experimentvideo0.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -400,18 +400,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-work {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .contact-copyright {
     font-family: "Montserrat", sans-serif;
     position: relative;
-    height: 465px;
+    height: calc(100% - 150px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -435,10 +432,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-contact .logo {
-    width: 100px;
+    width: 500px;
     position: relative;
     bottom: 70px;
-    left: 100px;
+    left: 170px;
 }
 
 .logo-contact .logo img{
@@ -615,6 +612,7 @@ label {
 /* WORK */
 .work {
     width: calc(100vw - 100px);
+    height: calc(100vh - 465px);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -923,13 +921,16 @@ label {
 }
 
 /* SERVICES */
+.services-wrapper {
+    background-color: #fff4ea;
+}
+
 .container .services-main {
     position: relative;
     width: 100%;
     height: 100vh;
     left: 80px;
     padding: 0 40px;
-    background-color: #fff4ea;
 }
 
 .services-main .services {
@@ -1001,7 +1002,6 @@ label {
     width: 88%;
     bottom: 0;
     left: 130px;
-    background-color:#fff4ea;
 }
 
 .service-content .service-subheading {
@@ -1031,7 +1031,6 @@ label {
     padding: 50px 10px 60px 150px;
     margin-left: 0;
     overflow: hidden;
-    background-color:#fff4ea;
 }
 
 .container .digital-services {
@@ -2723,7 +2722,6 @@ p.menu-text-title {
         justify-content: flex-start;
         align-items: start;
         overflow: hidden;
-        background-color:#fff4ea;
     }
     .mobile-dev-services .dev-row,
     .mobile-digital-services .digital-row {
