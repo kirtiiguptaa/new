@@ -1001,6 +1001,7 @@ label {
     width: 88%;
     bottom: 0;
     left: 130px;
+    background-color:#fff4ea;
 }
 
 .service-content .service-subheading {
@@ -1030,6 +1031,7 @@ label {
     padding: 50px 10px 60px 150px;
     margin-left: 0;
     overflow: hidden;
+    background-color:#fff4ea;
 }
 
 .container .digital-services {
@@ -2721,6 +2723,7 @@ p.menu-text-title {
         justify-content: flex-start;
         align-items: start;
         overflow: hidden;
+        background-color:#fff4ea;
     }
     .mobile-dev-services .dev-row,
     .mobile-digital-services .digital-row {
