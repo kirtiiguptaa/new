@@ -43,7 +43,6 @@ var swiper = new Swiper(".swiper", {
       },
     },
   });
-  
 
 //  Count
 document.addEventListener("DOMContentLoaded", () => {
@@ -80,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
         counter("count3", 0, 120, 5000);
     }, 10000);
 });
-
 
 
 (function ($) {
