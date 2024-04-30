@@ -929,6 +929,7 @@ label {
     height: 100vh;
     left: 80px;
     padding: 0 40px;
+    background-color: #fff4ea;
 }
 
 .services-main .services {
@@ -1337,7 +1338,7 @@ label {
 .sm-clean a:hover, 
 .sm-clean a:focus, 
 .sm-clean a:active {
-    color: #ffffff;
+    color: #fff4ea;
     padding: 5px 0;
     font-size: 50px;
     line-height: 110%;
