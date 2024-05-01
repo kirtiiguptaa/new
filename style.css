@@ -2755,8 +2755,16 @@ p.menu-text-title {
     .mobile-digital-services .digital-heading {
         font-size: 24px;
         font-weight: 700;
-        border-bottom: 2px solid #f9b000;
         margin: 0 20px;
+    }
+    .creative-services .creative-heading {
+        font-size: 24px;
+    }
+    .mobile-dev-services .dev-heading {
+        color: #F57D1F;
+    }
+    .mobile-digital-services .digital-heading {
+        color: #50727B;
     }
     .mobile-dev-services .dev-content,
     .mobile-digital-services .digital-content {
