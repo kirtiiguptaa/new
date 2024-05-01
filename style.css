@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .home {
     width: calc(100vw - 100px);
     height: 100%;
-    background: url(assets/experimentvideo10.webp);
+    background: url(assets/landingpage.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -286,11 +286,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About */
 .about-us {
-    background: url(assets/90CENIAabout.webp);
+    background: url(assets/90CENIA-about-video.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: calc(100vw - 100px);
     height: 100vh;
     display: flex;
     align-items: center;
