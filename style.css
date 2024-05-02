@@ -70,7 +70,7 @@ body {
 }
 
 #loader {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #000 url(assets/loader.webp) no-repeat center;
     position: fixed;
@@ -1001,14 +1001,14 @@ label {
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    padding: 50px 10px 60px 150px;
+    padding: 20px 10px 0 150px;
     margin-left: 0;
     overflow: hidden;
 }
 
 .container .digital-services {
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .creative-services .creative-heading,
@@ -1045,6 +1045,34 @@ label {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.service-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-left {
+    position: relative;
+    left: 120px;
+    width: 250px;
+}
+
+.service-top.dev-reverse {
+    flex-direction: row-reverse;
+}
+
+.service-left img {
+    width: 100%;
+}
+
+.service-right {
+    position: absolute;
+    right: 120px;
+    width: 560px;
 }
 
 .creative-row,
@@ -1103,7 +1131,7 @@ label {
     border: 2px solid #292726;
     color: #fff;
     margin-top: 40px;
-    padding: 20px 25px;
+    padding: 20px 20px;
     position: relative;
     border-radius: 12px;
     -webkit-box-shadow: 0 15px 20px 0 rgb(0 0 0 / 8%);
@@ -1115,7 +1143,7 @@ label {
     transition: all .2s ease-in;
     max-width: 320px;
     margin: 0 30px;
-    height: 380px;
+    height: 260px;
 } 
 
 .creative-list:hover,
@@ -2454,9 +2482,6 @@ p.menu-text-title {
         background-color: #000;
         width: 100%;
     }
-    .home h1 {
-        font-size: 55px;
-    }
     .about-us {
         width: 100%;
         height: calc(100vh - 80px);
@@ -2701,6 +2726,9 @@ p.menu-text-title {
     .service-main-list li {
         margin-bottom: 0;
     }
+    .service-main-list li:last-child {
+        margin-top: 0;
+    }
     .service-main-list li a {
         font-size: 45px;
     }
@@ -2730,6 +2758,18 @@ p.menu-text-title {
         width: 100%;
         margin-top: 5px;
         bottom: auto;
+    }
+    .service-top {
+        display: block;
+        padding-bottom: 300px;
+    }
+    .service-left img {
+        display: none;
+    }
+    .service-right {
+        right: 0;
+        width: 100%;
+        padding: 0 20px;
     }
     .container .dev-services,
     .container .digital-services {
