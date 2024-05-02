@@ -586,6 +586,11 @@ label {
 }
 
 /* WORK */
+
+.mobile.work {
+    display: none;
+}
+
 .work {
     width: calc(100vw - 100px);
     height: 170px;
@@ -689,6 +694,26 @@ label {
 .pride img {
     width: 26px;
     border-radius: 50%;
+}
+
+.container {
+    width: 100vw;
+}
+
+.contact-copyright.copyright-section {
+    height: 100vh;
+    width: calc(100vw - 100px);
+    left: 100px;
+    overflow: hidden;
+}
+.copyright-section .logo-contact {
+    top: 40px;
+}
+.contact-copyright.copyright-section .contact-details {
+    width: 100%;
+}
+.contact-copyright.copyright-section .copyright {
+    width: 100%;
 }
 
 
@@ -810,11 +835,12 @@ label {
 
 /* CONTACT */
 .contact-container.contact-career {
+    width: 100vw;
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .contact-container.contact-career .contact-form {
@@ -831,6 +857,7 @@ label {
     font-weight: 600;
     color: #000;
     font-size: 40px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
@@ -891,6 +918,7 @@ label {
 
 /* SERVICES */
 .services-wrapper {
+    width: 100vw;
     background-color: #fff4ea;
 }
 
@@ -1240,12 +1268,19 @@ label {
 }
 
 /* SEO */
-.services-main .service {
+.services-part {
+    position: relative;
+    width: calc(100vw - 100px);
+    left: 100px;
+}
+
+.services-part .service {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
     top: 50px;
+    width: 100%;
 }
 
 .service .service-heading {
@@ -1264,8 +1299,8 @@ label {
     flex-direction: column;
     justify-content: center;
     margin-top: 90px;
-    margin-left: 0px;
-    margin-right: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .service-description .description-title {
@@ -1284,6 +1319,9 @@ label {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .seo-choose li:last-child{
@@ -2580,7 +2618,7 @@ p.menu-text-title {
         flex-direction: column;
         width: 100%;
         margin-left: 0;
-        gap: 0px;
+        gap: 5px;
         bottom: 45px;
     }
     .contact-phone, 
@@ -2597,14 +2635,23 @@ p.menu-text-title {
         font-size: 12px;
         color: #fff;
     }
-    .work {
+    .contact-work .work {
         display: none;
+    }
+    .mobile.work {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        bottom: 45px;
     }
     .flag-container {
         flex-direction: row;
         top: 20px;
-        left: 46px;
         gap: 20px;
+    }
+    .flag-container .flag2 {
+        margin-bottom: 10px;
     }
     .work .content {
         max-width: 331px;
@@ -2612,6 +2659,25 @@ p.menu-text-title {
     }
     .work .content p {
         font-size: 16px;
+    }
+    .contact-copyright.copyright-section {
+        width: 100%;
+        left: 0;
+    }
+    .copyright-section .logo-contact {
+        top: 10px;
+    }
+    .contact-container.contact-career {
+        top: 40px;
+    }
+    .contact-container.contact-career .contact-title h2 {
+        font-size: 25px;
+    }
+    .contact-container.contact-career .contact-inputs {
+        width: 300px;
+    }
+    .contact-container.contact-career button {
+        margin-bottom: 40px;
     }
     .horizontal-slider .no-horizontal-slider {
         margin-left: 0;
@@ -2672,6 +2738,8 @@ p.menu-text-title {
     }
     .container section {
         margin-top: 70px;
+        width: 100%;
+        left: 0;
     }
     .contact-container {
         overflow-y: scroll;
@@ -2911,5 +2979,8 @@ p.menu-text-title {
     }
     .digital-col:last-child {
         margin-bottom: 150px;
+    }
+    .seo-expertise, .seo-choose {
+        margin-left: 0;
     }
 }
