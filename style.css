@@ -81,8 +81,6 @@ body a {
     text-decoration: none;
     color: #000000;    
     transition: color .2s linear;
-    background-color: .2s linear;
-    border-color: .2s linear;
 }
 
 .site-wrapper img {
@@ -1029,14 +1027,14 @@ label {
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    padding: 20px 10px 0 150px;
+    padding: 20px 10px 30px 150px;
     margin-left: 0;
     overflow: hidden;
 }
 
 .container .digital-services {
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 .creative-services .creative-heading,
@@ -1314,8 +1312,8 @@ label {
     margin-top: 10px;
 }
 
-.seo-expertise,
-.seo-choose {
+.service-expertise,
+.service-choose {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -1324,12 +1322,12 @@ label {
     width: 100%;
 }
 
-.seo-choose li:last-child{
+.service-choose li:last-child{
     padding-bottom: 30px;
 }
 
-.seo-expertise .expertise-title,
-.seo-choose .choose-title {
+.service-expertise .expertise-title,
+.service-choose .choose-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -1337,28 +1335,35 @@ label {
     width: 145px;
 }
 
-.seo-choose .choose-title {
+.service-choose .choose-title {
     width: 177px;
 }
 
-.seo-expertise li,
-.seo-choose li {
+.service-expertise li,
+.service-choose li {
     list-style-type: square;
     margin-left: 20px;
     margin-right: 50px;
 }
 
-.seo-expertise li a,
-.seo-choose li a {
-    font-size: 16px;
+.service-expertise li a,
+.service-choose li a {
+    font-size: 18px;
     font-weight: 700;
     color: #15616d;
+    cursor: auto;
 }
 
-.seo-expertise li a span,
-.seo-choose li a span {
+.service-expertise li a span,
+.service-choose li a span {
     font-weight: 500;
     color: #000;
+}
+
+/* ecommerce */
+
+.service-expertise.ecommerce .expertise-title {
+    width: 222px;
 }
 
 /* ===================================
@@ -2937,10 +2942,21 @@ p.menu-text-title {
         display: block;
         top: 80px;
     }
-    .service.seo {
-        top: 20px;
+    .services-part .service {
+        top: 40px;
         flex-direction: column;
+    }
+    .service.seo {
         gap: 30px;
+    }
+    .service.ecommerce {
+        gap: 20px;
+    }
+    .ecommerce .service-name {
+        font-size: 50px;
+    }
+    .service-description .description-content {
+        margin-top: 0;
     }
     .service-description {
         margin-right: 10px;
