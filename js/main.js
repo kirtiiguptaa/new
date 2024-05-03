@@ -21,27 +21,14 @@ var swiper = new Swiper(".swiper", {
     slidesPerView: 3,
     spaceBetween: 24,
     mousewheel: true,
+    autoplay: true,
     loop: true,
     speed: 500,
     // navigation: {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
     // },
-    breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 12,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 16,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-    },
-  });
+});
 
 //  Count
 document.addEventListener("DOMContentLoaded", () => {
@@ -62,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         current = start;
                         timer = setInterval(updateCounter, step);
-                    }, 1000);
+                    }, 5000);
                 }
             }
 
@@ -76,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         counter("count1", 0, 50, 5000);
         counter("count2", 0, 200, 5000);
         counter("count3", 0, 120, 5000);
-    }, 10000);
+    }, 15000);
 });
 
 
