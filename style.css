@@ -979,7 +979,7 @@ label {
 
 .service-main-list li:nth-child(1) a {
     font-size: 120px;
-    color: #7077A1;
+    color: #875fc9;
 }
 
 .service-main-list li:nth-child(2) a {
@@ -987,7 +987,7 @@ label {
 }
 
 .service-main-list li:nth-child(3) a {
-    color: #50727B;
+    color: #1fb2bd;
     line-height: 0.5;
 }
 
@@ -1006,7 +1006,7 @@ label {
     margin-right: 20px;
     margin-left: 20px;
     max-width: 350px;
-    bottom: 18px;
+    bottom: 5px;
     position: absolute;
 }
 
@@ -1027,7 +1027,7 @@ label {
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    padding: 20px 10px 30px 100px;
+    padding: 100px 10px 30px 100px;
     margin-left: 0;
     overflow: hidden;
 }
@@ -1040,13 +1040,13 @@ label {
 .creative-services .creative-heading,
 .dev-services .dev-heading,
 .digital-services .digital-heading {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 800;
     margin-bottom: 5px;
 }
 
 .creative-services .creative-heading {
-    color: #7077A1;
+    color: #875fc9;
 }
 
 .dev-services .dev-heading {
@@ -1054,7 +1054,7 @@ label {
 }
 
 .digital-services .digital-heading {
-    color: #50727B;
+    color: #1fb2bd;
 }
 
 .creative-services .creative-content,
@@ -1078,17 +1078,13 @@ label {
     align-items: center;
     justify-content: flex-start;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .service-left {
     position: relative;
     left: 120px;
     width: 250px;
-}
-
-.service-top.dev-reverse {
-    flex-direction: row-reverse;
 }
 
 .service-left img {
@@ -1116,15 +1112,15 @@ label {
 }
 
 .creative-list h4 {
-    color: #9caaff;
+    color: #875fc9;
 }
 
 .dev-list h4 {
-    color: #f88934;
+    color: #F57D1F;
 }
 
 .digital-list h4 {
-    color: #72e7d4;
+    color: #1fb2bd;
 }
 
 .creative-sections {
@@ -1138,8 +1134,6 @@ label {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
-    margin-left: 100px;
-    margin-right: 30px;
 }
 
 .dev-sections.swiper {
@@ -1279,7 +1273,7 @@ label {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    top: 50px;
+    top: 60px;
     width: 100%;
 }
 
@@ -1298,9 +1292,9 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 90px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-top: 150px;
+    margin-left: 50px;
+    margin-right: 80px;
 }
 
 .service-description .description-title {
@@ -1318,10 +1312,9 @@ label {
 .service-choose {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
+    padding-top: 80px;
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
 .service-choose li:last-child{
@@ -1362,10 +1355,46 @@ label {
     color: #000;
 }
 
-/* ecommerce */
+/* Subservice */
+
+.service.ux .service-name,
+.service.ui .service-name {
+    color: #875fc9;
+}
+
+.service.webflow .service-name,
+.service.ecommerce .service-name,
+.service.shopify .service-name,
+.service.woocommerce .service-name {
+    color: #F57D1F;
+}
+
+.service.seo .service-name {
+    color: #1fb2bd;
+}
 
 .service-expertise.ecommerce .expertise-title {
     width: 222px;
+}
+
+.service-expertise.ux .expertise-title {
+    width: 160px;
+}
+
+.service-expertise.ui .expertise-title {
+    width: 160px;
+}
+
+.service-expertise.webflow .expertise-title {
+    width: 265px;
+}
+
+.service-expertise.shopify .expertise-title {
+    width: 185px;
+}
+
+.service-expertise.woocommerce .expertise-title {
+    width: 270px;
 }
 
 /* ===================================
