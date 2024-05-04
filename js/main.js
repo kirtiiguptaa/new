@@ -63,8 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
         counter("count1", 0, 50, 5000);
         counter("count2", 0, 200, 5000);
         counter("count3", 0, 120, 5000);
-    }, 10000);
+    }, 15000);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("about-video");
+    setTimeout(function() {
+        // Show the video
+        video.style.display = "block";
+        // Play the video
+        video.play();
+    }, 5000);
+});
+
 
 
 (function ($) {
