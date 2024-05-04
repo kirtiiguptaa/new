@@ -2775,9 +2775,7 @@ p.menu-text-title {
     }
     .carousel-slider > .carousel-content > .slide-item {
         width: 100vw;
-    }
-    .slide-item {
-        width: 100vw;
+        height: auto;
     }
     .horizontal-slider .no-horizontal-slider .swiper-slide:nth-child(4) {
         height: 100%;
