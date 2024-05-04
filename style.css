@@ -281,18 +281,18 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-
 /* About */
 .about-us {
-    background: url(assets/90CENIA-about-video.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: calc(100vw - 100px);
     height: 100vh;
     display: flex;
     align-items: center;
 }
+
+.about-us video {
+    width: 100%;
+}
+
 
 /* APPROACH */
 .approach {
@@ -772,6 +772,7 @@ label {
 .career-info {
     animation: none;
     left: 25%;
+    text-align: justify;
     position: fixed;
 }
 
@@ -979,7 +980,7 @@ label {
 
 .service-main-list li:nth-child(1) a {
     font-size: 120px;
-    color: #875fc9;
+    color: #b232c0;
 }
 
 .service-main-list li:nth-child(2) a {
@@ -987,7 +988,7 @@ label {
 }
 
 .service-main-list li:nth-child(3) a {
-    color: #1fb2bd;
+    color: #2d848a;
     line-height: 0.5;
 }
 
@@ -1013,6 +1014,7 @@ label {
 .service-content .subservice-content {
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
     bottom: 0;
     width: 59%;
     right: 0;
@@ -1046,7 +1048,7 @@ label {
 }
 
 .creative-services .creative-heading {
-    color: #875fc9;
+    color: #b232c0;
 }
 
 .dev-services .dev-heading {
@@ -1054,14 +1056,14 @@ label {
 }
 
 .digital-services .digital-heading {
-    color: #1fb2bd;
+    color: #2d848a;
 }
 
 .creative-services .creative-content,
 .dev-services .dev-content,
 .digital-services .digital-content {
-    font-size: 18px;
-    text-align: start;
+    font-size: 17px;
+    text-align: justify;
     margin-top: 10px;
 }
 
@@ -1112,7 +1114,7 @@ label {
 }
 
 .creative-list h4 {
-    color: #875fc9;
+    color: #b232c0;
 }
 
 .dev-list h4 {
@@ -1120,7 +1122,7 @@ label {
 }
 
 .digital-list h4 {
-    color: #1fb2bd;
+    color: #2d848a;
 }
 
 .creative-sections {
@@ -1150,9 +1152,9 @@ label {
 .dev-list.swiper-slide,
 .digital-list.swiper-slide {
     background: #000;
+    text-align: justify;
     border: 2px solid #292726;
     color: #fff;
-    margin-top: 40px;
     padding: 20px 20px;
     position: relative;
     border-radius: 12px;
@@ -1285,7 +1287,6 @@ label {
 .service .service-name {
     font-size: 100px;
     font-weight: 900;
-    color: #89043d;
 }
 
 .service-description {
@@ -1304,6 +1305,7 @@ label {
 
 .service-description .description-content {
     font-size: 18px;
+    text-align: justify;
     font-weight: 500;
     margin-top: 10px;
 }
@@ -1339,6 +1341,7 @@ label {
     list-style-type: square;
     margin-left: 20px;
     margin-right: 50px;
+    text-align: justify;
 }
 
 .service-expertise li a,
@@ -1359,7 +1362,7 @@ label {
 
 .service.ux .service-name,
 .service.ui .service-name {
-    color: #875fc9;
+    color: #B232C0;
 }
 
 .service.webflow .service-name,
@@ -1370,7 +1373,7 @@ label {
 }
 
 .service.seo .service-name {
-    color: #1fb2bd;
+    color: #2D848A;
 }
 
 .service-expertise.ecommerce .expertise-title {
@@ -2983,8 +2986,10 @@ p.menu-text-title {
     .service.ecommerce {
         gap: 20px;
     }
-    .ecommerce .service-name {
+    .service .service-name {
         font-size: 50px;
+        font-weight: 800;
+        margin-top: 20px;
     }
     .service-description .description-content {
         margin-top: 0;
@@ -2992,15 +2997,22 @@ p.menu-text-title {
     .service-description {
         margin-right: 10px;
         margin-left: 10px;
+        padding-top: 50px;
     }
-    .seo-expertise .expertise-title, 
-    .seo-choose .choose-title {
-        margin-left: 10px;
+    .service-expertise .expertise-title, 
+    .service-choose .choose-title {
+        margin-left: 0;
+        margin-right: 0;
     }
-    .seo-expertise li, 
-    .seo-choose li {
-        margin-left: 25px;
-        margin-right: 15px;
+    .service-expertise li, 
+    .service-choose li {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: start;
+    }
+    .service-expertise, .service-choose {
+        margin-left: 30px;
+        margin-right: 10px;
     }
     .contact-details.responsive {
         bottom: 80px;
@@ -3026,8 +3038,5 @@ p.menu-text-title {
     }
     .digital-col:last-child {
         margin-bottom: 150px;
-    }
-    .seo-expertise, .seo-choose {
-        margin-left: 0;
     }
 }
