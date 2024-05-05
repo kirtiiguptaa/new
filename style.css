@@ -405,12 +405,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 65rem;
     height: 75vh;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial-logo {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
 }
 
 .testimonial-logo img {
@@ -419,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-logo.logo1 img {
-    width: 350px;
+    width: 320px;
 }
 
 .testimonial-logo.logo2 img {
@@ -448,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-content p {
-    width: 85%;
+    width: 80%;
     font-size: 20px;
     text-align: justify;
     color: #fff;
@@ -457,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-ratings {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .testimonial-ratings i {
@@ -1090,6 +1093,15 @@ label {
 
 .services-main .services:last-child {
     margin-right: 0;
+}
+
+.service-img {
+    margin-top: 45px;
+    width: 325px;
+}
+
+.service-img img {
+    width: 100%;
 }
 
 .container .services-heading {
