@@ -1086,7 +1086,6 @@ label {
 .services-main .services {
     position: relative;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-right: 0;
     height: 100vh;
@@ -1103,25 +1102,32 @@ label {
     color: #292726;
     text-align: start;
     margin-left: 10px;
-    /* margin-top: 15.5rem; */
+    margin-top: 6.5rem;
 }
 
 .service-motto {
     position: absolute;
-    bottom: 30px;
-    left: 180px;
+    top: 6.5rem;
+    right: 40px;
 }
 
 .service-motto h1 {
-    font-size: 45px;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 400;
     color: #000;
 }
 
 .service-main-list {
     text-align: center;
-    /* margin-top: 3rem; */
     position: absolute;
-    right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 30px;
+    width: 100%;
 }
 
 .service-main-list li {
@@ -3197,4 +3203,4 @@ p.menu-text-title {
     .digital-col:last-child {
         margin-bottom: 150px;
     }
-}s
+}
