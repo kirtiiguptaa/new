@@ -1,23 +1,4 @@
 
-/*------------------------------------------------------------------
-
-version 1.1
-
-[Table of contents]
-1. Global CSS   
-    1.1 Tipper CSS
-2. Menu CSS
-    2.1 Sidebar (Menu Widgets) CSS
-3. Blog Page CSS
-4. Single Post CSS
-5. Comments CSS
-6. Contact Page CSS
-7. Archive CSS / Search CSS / 404 Page CSS / Attachment Page
-8. Attachment Page CSS
-9. Responsive CSS
--------------------------------------------------------------------*/
-
-
 @import url("css/clear.css");
 @import url("css/font-awesome.min.css");
 @import url("css/sm-clean.css");
@@ -1128,7 +1109,7 @@ label {
 .service-motto {
     position: absolute;
     bottom: 30px;
-    left: 130px;
+    left: 180px;
 }
 
 .service-motto h1 {
@@ -3216,4 +3197,4 @@ p.menu-text-title {
     .digital-col:last-child {
         margin-bottom: 150px;
     }
-}
+}s
