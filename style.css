@@ -329,16 +329,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.expertise-scale::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    background-color: #fff;
-    top: -2px;
-    border-radius: 8px;
-} 
-
 .approach h1 {
     font-size: 66px;
     font-weight: 900;
@@ -351,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 .approach-right {
     position: relative;
     right: 150px;
-    top: 24px;
+    top: 30px;
 }
 
 .approach-right .approach-numbers{
@@ -496,7 +486,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-details .testimonial-ratings {
-    display: flex;
     margin-top: 10px;
 }
 
@@ -1115,9 +1104,8 @@ label {
 
 .services-main .services {
     position: relative;
-    top: 5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     margin-right: 0;
     height: 100vh;
@@ -1134,23 +1122,23 @@ label {
     color: #292726;
     text-align: start;
     margin-left: 10px;
-    margin-top: 15.5rem;
+    /* margin-top: 15.5rem; */
 }
 
 .service-motto {
     position: absolute;
-    bottom: 70px;
+    bottom: 30px;
     left: 130px;
 }
 
 .service-motto h1 {
-    font-size: 50px;
-    color: #f9b000;
+    font-size: 45px;
+    color: #000;
 }
 
 .service-main-list {
     text-align: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     position: absolute;
     right: 70px;
 }
@@ -1186,32 +1174,6 @@ label {
     color: #2d848a;
     line-height: 0.5;
 }
-
-/* .service-content {
-    display: flex;
-
-}
-
-.service-content .service-subheading {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1;
-    margin-right: 20px;
-    margin-left: 20px;
-    max-width: 350px;
-    bottom: 5px;
-    position: absolute;
-}
-
-.service-content .subservice-content {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: justify;
-    bottom: 0;
-    width: 59%;
-    right: 0;
-    position: absolute;
-} */
 
 .container .creative-services,
 .container .dev-services,
@@ -2238,12 +2200,6 @@ p.menu-text-title {
 ====================================== */
 
 @media screen and (max-width: 1370px) {
-    .service-content {
-        bottom: 10px;
-    }
-    .service-content .subservice-content {
-        width: 67%;
-    }
     .contact-copyright .contact-container {
         bottom: 24px;
     }
@@ -2253,12 +2209,12 @@ p.menu-text-title {
     .contact-container .contact-inputs {
         height: 50px;
     }
-    .container .services-heading {
+    /* .container .services-heading {
         margin-top: 13.4rem;
     }
     .service-main-list {
         margin-top: 3.8rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 1360px) {
@@ -2856,8 +2812,19 @@ p.menu-text-title {
         justify-content: center;
     }
     .logo-contact .logo {
-        width: 300px;
-        left: 0;
+        width: 270px;
+        left: 40px;
+        top: -60px;
+        bottom: unset;
+        position: absolute;
+    }
+    .logo-contact .motto {
+        display: none;
+    }
+    .contact-copyright .contact-container {
+        bottom: 240px;
+        position: absolute;
+        overflow-y: hidden;
     }
     .contact-container {
         bottom: 380px;
@@ -2866,15 +2833,6 @@ p.menu-text-title {
     .contact-container button {
         left: 0;
         padding: 8px 23px;
-    }
-    .name-logo {
-        margin-bottom: 10px;
-    }
-    .name-logo .name {
-        font-size: 30px;
-        border-right: none;
-        margin: 0;
-        padding: 0;
     }
     .contact-details {
         flex-direction: column;
@@ -2951,6 +2909,7 @@ p.menu-text-title {
     .horizontal-slider .no-horizontal-slider .swiper-slide {
         margin-bottom: 0;
         height: 100vh;
+        background: #fff4ea;
     }
     .horizontal-slider .no-horizontal-slider:last-child {
         margin-left: 0;
@@ -3074,22 +3033,15 @@ p.menu-text-title {
         height: 100%;
         left: 0;
     }
-    .service-content .service-subheading {
-        font-size: 20px;
-        font-weight: 700;
-        margin-left: 0;
-        max-width: 100%;
-        margin-right: 0;   
+    .service-motto {
+        left: 0;
+        bottom: 90px;
     }
-    .service-content .subservice-content {
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 1.6;
-        left: 12px;
-        right: 0;
-        width: 100%;
-        margin-top: 5px;
-        bottom: auto;
+    .service-motto h1 {
+        font-size: 40px;
+        text-align: center;
+        color: #000;
+        line-height: 1.1;
     }
     .service-top {
         display: block;
