@@ -287,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: flex;
     align-items: center;
+    background: #fff4ea;
 }
 
 .about-us video {
@@ -438,11 +439,11 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-logo {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .testimonial-logo.logo1 img {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 
@@ -469,14 +470,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-content p {
-    width: 78%;
+    width: 85%;
     font-size: 20px;
     text-align: justify;
     color: #fff;
 }
 
 .testimonial-details {
-    margin-left: 115px;
+    margin-left: 78px;
     margin-top: 20px;
     padding-bottom: 50px;
 }
@@ -492,6 +493,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
+}
+
+.testimonial-details .testimonial-ratings {
+    display: flex;
+    margin-top: 10px;
+}
+
+.testimonial-details .testimonial-ratings i {
+    color: #f9b000;
+    font-size: 20px;
+    margin-right: 7px;
 }
 
 .carousel-slider * {
@@ -766,6 +778,7 @@ label {
     justify-content: space-evenly;
     position: relative;
     overflow: hidden;
+    background: #fff4ea;
 }
 
 .flag-container {
@@ -1125,15 +1138,14 @@ label {
 }
 
 .service-motto {
-    margin-top: 40px;
-    margin-left: 70px;
+    position: absolute;
+    bottom: 70px;
+    left: 130px;
 }
 
-.service-motto h4 {
-    font-size: 26px;
+.service-motto h1 {
+    font-size: 50px;
     color: #f9b000;
-    font-family: 'Sacramento', cursive;
-    line-height: 1;
 }
 
 .service-main-list {
@@ -1175,12 +1187,9 @@ label {
     line-height: 0.5;
 }
 
-.service-content {
+/* .service-content {
     display: flex;
-    position: absolute;
-    width: 88%;
-    bottom: 20px;
-    left: 130px;
+
 }
 
 .service-content .service-subheading {
@@ -1202,7 +1211,7 @@ label {
     width: 59%;
     right: 0;
     position: absolute;
-}
+} */
 
 .container .creative-services,
 .container .dev-services,
@@ -2245,10 +2254,10 @@ p.menu-text-title {
         height: 50px;
     }
     .container .services-heading {
-        margin-top: 11.4rem;
+        margin-top: 13.4rem;
     }
     .service-main-list {
-        margin-top: 1.8rem;
+        margin-top: 3.8rem;
     }
 }
 
@@ -2897,6 +2906,7 @@ p.menu-text-title {
         flex-direction: column;
         height: 100%;
         bottom: 5px;
+        background: #fff4ea;
     }
     .flag-container {
         flex-direction: row;
