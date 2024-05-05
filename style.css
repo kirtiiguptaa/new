@@ -3000,6 +3000,16 @@ p.menu-text-title {
         width: 100%;
         margin-right: 0;
     }
+    .service-img {
+        margin-top: 90px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-img img {
+        width: 325px;
+    }
     .container .services-heading {
         font-size: 60px;
         text-align: center;
