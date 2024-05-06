@@ -1628,7 +1628,7 @@ label {
 .sm-clean .menu-list:active {
     color: #fff4ea;
     padding: 5px 0;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 110%;
     font-weight: 800;
 }
@@ -1656,38 +1656,8 @@ label {
     width: 100%;
 }
 
-.sm-clean a span.sub-arrow {
-    color: #acacac;
-    font-size: 45px !important;
-    left: -42px;
-}
-
-.sm-clean a span.sub-arrow:before {
-    display: block;
-    content: '\203A';
-    transform: rotate(90deg);
-}
-
-.sm-clean a.highlighted span.sub-arrow:before {
-    display: block;
-    content: '\203A';
-    transform: rotate(270deg) translateY(-3px);
-    margin-left: -4px;
-}
-
 .sub-arrow {
     display: none;
-}
-
-.sm-clean .sub-menu li a,
-.sm-clean .children li a {
-    color: #bbbbbb;
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 10px;
-    padding: 10px 0;
-    letter-spacing: 0.5px;
-    font-weight: 400;
 }
 
 .dropdownbtn {
@@ -1699,7 +1669,7 @@ label {
     display: none;
     position: absolute;
     left: 270px;
-    top: -150px;
+    top: -135px;
     width: 950px;
     height: 100%;
     transition: all 5s ease-in-out;
@@ -1797,128 +1767,6 @@ label {
     transition: 0.2s left cubic-bezier(0.22, 0.61, 0.36, 1), 
         0s 0.2s background linear;
     overflow: visible;
-}
-
-#header-main-menu .search-field {
-    font-family: 'Poppins', sans-serif;
-    max-width: 480px;
-    width: 90%;
-    color: #fff;
-    padding: 0;
-    margin-top: -3px;
-    font-size: 50px;
-    line-height: 110%;
-    font-weight: 800;
-    background-color: transparent;
-    border: none;
-    border-bottom: 5px solid transparent;
-    text-align: left;
-    transition: border 0.4s ease;
-    -webkit-appearance: none;
-}
-
-#header-main-menu .search-field::-ms-clear {  
-    display: none; 
-    width: 0; 
-    height: 0; 
-}
-
-#header-main-menu .search-field::-ms-reveal {  
-    display: none; 
-    width: 0; 
-    height: 0; 
-}
-
-#header-main-menu .search-field::-webkit-search-decoration,
-#header-main-menu .search-field::-webkit-search-cancel-button,
-#header-main-menu .search-field::-webkit-search-results-button,
-#header-main-menu .search-field::-webkit-search-results-decoration { 
-    display: none; 
-}
-
-#header-main-menu .search-field:focus {
-    border-bottom: 5px solid #f9b000;
-}
-
-#header-main-menu .search-field::-webkit-input-placeholder {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    padding: 5px 0;
-    font-size: 50px;
-    line-height: 110%;
-    font-weight: 800;
-    opacity: 1;
-    text-align: left;
-}
-
-#header-main-menu .search-field::-moz-placeholder {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    padding: 5px 0;
-    font-size: 50px;
-    line-height: 110%;
-    font-weight: 800;
-    opacity: 1;
-    text-align: left;
-}
-
-#header-main-menu .search-field:-ms-input-placeholder {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    padding: 5px 0;
-    font-size: 50px;
-    line-height: 110%;
-    font-weight: 800;
-    opacity: 1;
-    text-align: left;
-}
-
-#header-main-menu .search-field:-moz-placeholder {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    padding: 5px 0;
-    font-size: 50px;
-    line-height: 110%;
-    font-weight: 800;
-    opacity: 1;
-    text-align: left;
-}
-
-.menu-text {
-    font-family: 'Playfair Display',serif;
-    font-weight: 700;
-    font-size: 47px;
-    line-height: 60px;
-    color: #fff;
-}
-
-.menu-right-text .menu-text a {
-    color: #b6df1e;
-}
-
-.menu-right-text .menu-text a:hover {
-    color: #acacac;
-}
-
-p.menu-text-title {
-    color: #b6df1e;
-    font-size: 13px;
-    letter-spacing: 5px;
-    font-weight: 700;
-    padding-bottom: 30px;
-    margin-bottom: 0;
-}
-
-.menu-right-text {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
-    padding-top: 30px;
-    color: #fff;
-}
-
-.menu-right-text a {
-    color: #fff;
 }
 
 .logo-holder {
@@ -2141,44 +1989,6 @@ p.menu-text-title {
     opacity: 0.9;
 }
 
-.horizontal-slider .carousel-item-image:hover .carousel-item-info, 
-.horizontal-slider .carousel-item-image:hover a.img-thumb:after, 
-.horizontal-slider .carousel-item-image:hover .carousel-item-image-shadow:after {
-    opacity: 1;
-    transform: translateY(0px);
-    visibility: visible;
-}
-
-.horizontal-slider .carousel-item-image a.img-thumb:after, 
-.horizontal-slider .carousel-item-image .carousel-item-image-shadow:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 0.34) 100%);
-    width: 100%;
-    height: 100%;
-    transition: all .3s linear;
-    opacity: 0;
-}
-
-.carousel-item-image.no-title-on-slide .carousel-item-image-shadow:after {
-    display: none;
-}
-
-.horizontal-slider .swiper-slide.more-posts-portfolio {
-    color: #000;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    cursor: pointer;
-    width: 85px;
-    transition: .3s;
-}
-
-.horizontal-slider .swiper-slide.more-posts-portfolio:hover {
-    color: #999;
-}
-
 .horizontal-slider .portfolio-slider-load-more {
     position: absolute;
     top: 50%;
@@ -2223,9 +2033,6 @@ p.menu-text-title {
     margin-left: 10px;
 }
 
-
-  
-
 /* ===================================
     9. Responsive CSS
 ====================================== */
@@ -2246,60 +2053,6 @@ p.menu-text-title {
     .service-main-list {
         margin-top: 3.8rem;
     } */
-}
-
-@media screen and (max-width: 1360px) {
-
-    .single-post h1.entry-title {
-        margin-left: auto;
-        float: none;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .single-post .post-info-wrapper {
-        float: none;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .single-post .post-info-wrapper .sticky-spacer {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .single-post .post-info-wrapper .entry-info {
-        position: relative !important;
-        top: 0 !important;
-    }
-
-    .single-post .post-info-wrapper .entry-info:after {
-        display: none;
-    }
-
-    .single-post .post-info-wrapper .entry-info > div {
-        display: inline-block;
-        margin: 0 20px;
-    }
-
-    .single-post .entry-content {
-        float: none;
-    }
-
-    .more-posts-index-holder, 
-    .blog-holder {    
-        width: calc(70vw - 200px);
-    }
-
-    .blog-item-holder .post-thumbnail {
-        width: 30vw;
-    }
-
-    .page-split-left {
-        width: calc(50vw - 200px);
-        margin-left: 150px;
-    }
 }
 
 @media screen and (max-width: 1279px) {
@@ -2329,7 +2082,6 @@ p.menu-text-title {
 
 
 @media screen and (max-width: 1024px) {
-
     #header-main-menu {
         width: 36% !important;
     }
@@ -2347,7 +2099,6 @@ p.menu-text-title {
 
 
 @media screen and (max-width: 1020px) {   
-
     .service-dropdown {
         left: 100px;
         top: -110px;
@@ -2989,10 +2740,7 @@ p.menu-text-title {
     .carousel-slider > .carousel-content > .slide-item {
         width: 100vw;
         height: auto;
-    }
-    .horizontal-slider .no-horizontal-slider .swiper-slide:nth-child(4) {
-        height: 100%;
-    }    
+    }  
     .testimonial-card .page {
         height: 100%;
     }
@@ -3133,7 +2881,7 @@ p.menu-text-title {
         top: 0;
         height: 100%;
     }
-    .horizontal-slider .swiper-slide {
+    .horizontal-slider .swiper-slide:last-child {
         top: 0;
         height: 100%;
     }
