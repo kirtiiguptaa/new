@@ -2651,7 +2651,7 @@ label {
     .main-menu.sm-clean li .menu-list i {
         display: none;
     }
-    .service-dropdown {
+    .dropdownbtn:hover .service-dropdown {
         display: none;
     }
     .home {
