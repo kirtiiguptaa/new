@@ -2688,7 +2688,7 @@ p.menu-text-title {
 
     .horizontal-slider .no-horizontal-slider .swiper-slide {
         display: block !important;
-        height: auto;
+        height: 100%;
         margin-left: 0;
         margin-right: 0;
     }
@@ -3061,6 +3061,8 @@ p.menu-text-title {
     .contact-copyright.copyright-container {
         width: 100%;
         left: 0;
+        height: calc(100vh - 80px);
+        top: 80px;
     }
     .mobile.work {
         display: flex;
@@ -3086,8 +3088,8 @@ p.menu-text-title {
         font-size: 16px;
     }
     .contact-copyright.copyright-section {
-        width: 100%;
-        left: 0;
+        height: calc(100vh - 80px);
+        top: 80px;
     }
     .copyright-section .logo-contact {
         top: 10px;
@@ -3335,7 +3337,6 @@ p.menu-text-title {
         transition: all .2s ease-in;
         max-width: 300px;
         margin: 0 20px;
-        height: 380px;
         margin-bottom: 30px;
     } 
     .creative-sections {
@@ -3365,17 +3366,13 @@ p.menu-text-title {
     }
     .container .services-main.seo {
         display: block;
-        top: 80px;
+    }
+    .services-part {
+        top: 0;
     }
     .services-part .service {
         top: 40px;
         flex-direction: column;
-    }
-    .service.seo {
-        gap: 30px;
-    }
-    .service.ecommerce {
-        gap: 20px;
     }
     .service .service-name {
         font-size: 50px;
