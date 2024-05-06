@@ -2897,6 +2897,12 @@ p.menu-text-title {
     .main-menu.sm-clean a {
         font-size: 30px;
     }
+    .main-menu.sm-clean li .menu-list i {
+        display: none;
+    }
+    .service-dropdown {
+        display: none;
+    }
     .home {
         position: relative;
         height: calc(100vh - 80px);
