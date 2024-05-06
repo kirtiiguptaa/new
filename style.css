@@ -487,20 +487,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 
-.testimonial-logo.logo4 img {
-    margin-left: 14px;
-}
-
-.testimonial-logo.logo5 img {
-    margin-left: 22px;
-}
-
-.testimonial-logo.logo9 img {
-    margin-left: 42px;
-}
-
-.testimonial-logo.logo10 img {
-    margin-left: 7px;
+.testimonial-logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial-content.small {
@@ -2622,6 +2613,12 @@ label {
 
 
 @media (max-width: 400px) {
+    .home, 
+    .about-us, 
+    .approach, 
+    .contact-work {
+        height: calc(100vh - 80px);
+    }
     .menu-right-part {
         min-height: 80px;
         border-right: none;
@@ -2656,7 +2653,6 @@ label {
     }
     .home {
         position: relative;
-        height: calc(100vh - 80px);
         background-position: center;
         background-size: contain;
         background-color: #000;
@@ -2664,7 +2660,6 @@ label {
     }
     .about-us {
         width: 100%;
-        height: calc(100vh - 80px);
         margin: 0;
     }
     .about-us video {
@@ -2672,7 +2667,6 @@ label {
     }
     .approach {
         width: 100%;
-        height: calc(100vh - 80px);
     }
     .approach-content {
         flex-direction: column;
@@ -2744,7 +2738,36 @@ label {
     .testimonial-card .page {
         height: 100%;
     }
+    .testimonial-logo {
+        margin-top: 10px;
+    }
+    .testimonial-logo.logo1 img {
+        width: 300px;
+    }
+    .testimonial-logo.logo2 img,
+    .testimonial-logo.logo4 img,
+    .testimonial-logo.logo5 img,
+    .testimonial-logo.logo6 img,
+    .testimonial-logo.logo7 img,
+    .testimonial-logo.logo8 img,
+    .testimonial-logo.logo9 img,
+    .testimonial-logo.logo10 img {
+        width: 80px;
+    }
+    .brand-name {
+        margin-top: 5px;
+    }
+    .testimonial-content {
+        margin-top: 5px;
+    }
+    .testimonial-content.small {
+        margin-top: 20px;
+    }
+    .testimonial-content.small p {
+        width: 90%;
+    }
     .testimonial-content p {
+        font-size: 18px;
         width: 90%;
     }
     .testimonial-details {
@@ -2879,7 +2902,7 @@ label {
     }
     .horizontal-slider .no-horizontal-slider .swiper-slide:last-child {
         top: 0;
-        height: 100%;
+        height: calc(100vh - 80px);
     }
     .horizontal-slider .swiper-slide:last-child {
         top: 0;
